@@ -203,7 +203,7 @@ footer dl{
 
 
 footer dd{
-    margin-left: var(--spacer);
+    margin-left: var(--spacer-dbl);
 }
 
 footer dt{
