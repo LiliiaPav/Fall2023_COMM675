@@ -169,6 +169,8 @@ footer{
     gap: var(--spacer);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto auto;
+    line-height: var(--line-h);
+    font-size: 0.8rem;
 }
 
 footer p, footer #social{  
@@ -196,16 +198,16 @@ footer dl{
     margin-left: var(--spacer);
 }
 
-#hours{
-    margin-right: var(--spacer);
-    
-    }
+#hours{  margin-right: var(--spacer);  }
+
 
 footer dd{
-    margin-left: var(--spacer-dbl);
+    margin-left: var(--spacer);
 }
 
-
+footer dt{
+    font-weight: var(--fw-b);
+}
 
 
 
