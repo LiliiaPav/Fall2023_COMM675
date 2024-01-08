@@ -1,0 +1,223 @@
+/*---------Global variables-----------*/
+:root{
+/*---------typography-----------*/
+--primary-font: 'Montserrat', sans-serif;
+--headline-font: 'Leckerli One', cursive;
+--fw-l:100;
+--fw-b:600;
+--fs-base: 16px;
+--line-h: 1.5;
+
+/*---------colors-----------*/
+--primary-color:  #F14F74;
+--secondary-color: #E19FAE;
+--tetriary-color: #DB2B41;
+/*--neutral-lt-color: #F2E2D9;*/
+--neutral-lt-color: white;
+--accent-color: #BDB0D9;
+
+/*---------helper-----------*/
+--spacer: 1rem;
+--spacer-dbl: 2rem;
+--border-radius: 6px;
+--shadow: 1px 1px 3px #D9C2BA;
+}
+
+
+/*---------general-----------*/
+html { 
+    font-size: var(--fs-base);
+    min-width: 100%;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: auto;
+    min-height: 100vh;
+
+}
+
+/*---------Navigation START-----------*/
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.menu {
+    font-size: 4rem;
+    color: var(--neutral-lt-color);
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav ul{ width: 100%;}
+
+.current{ text-shadow: 3px 3px 2px rgba(0,0,0,.6);}
+
+nav ul li{
+padding: 1rem;
+border-bottom: solid var(--primary-color) 1px;
+}
+
+ul li.logo{ margin-right: auto;}
+
+nav li a {
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul a:link, nav ul a:visited{
+    font-size: 2rem;
+    color: var(--neutral-lt-color);
+}
+
+nav ul a:hover{ color: var(--neutral-lt-color); }
+
+nav ul a:active{ color: var(--tetriary-color); }
+
+.navigation{
+    position:absolute;
+    top:100%;
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+.navToggler:checked ~ .navigation{ display: block;}
+
+.closeBtn{display: none;}
+.navToggler{display: none;}
+.navToggler:checked ~ .navTogglerMenu .closeBtn{display: block;}
+.navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
+
+/*---------Navigation ENDS-----------*/
+
+
+header{
+    background-color: var(--secondary-color);
+    border-bottom: solid 15px var(--primary-color);
+    text-align: center;
+    padding: var(--spacer);
+    width: 100%;
+}
+
+#bookNow{
+    border-bottom: solid 15px var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: var(--spacer-dbl);
+
+}
+
+#bookNow button{
+    background-color: var(--primary-color);
+    padding: var(--spacer);
+    border: none;
+    color: var(--neutral-lt-color);
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+}
+#bookNow button i{
+    margin-right: var(--spacer);
+}
+
+/*---------Main-----------*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home img{
+    margin: var(--spacer-dbl);
+}
+
+#home h1{
+    background-color: var(--tetriary-color);
+    font: 3rem var(--headline-font);
+    color: transparent;
+    text-shadow: 3px 3px 3px rgba(255,255,255,0.2);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+#home p{
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+/*---------Footer-----------*/
+
+footer{
+    background-color: var(--secondary-color);
+    border-top: solid 15px var(--primary-color);
+    text-align: center;
+    padding-top: var(--spacer);
+    width: 100%;
+    margin-top: var(--spacer-dbl);
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
+
+
+/*---------media-----------*/
+@media screen and (min-width: 700px) {
+    .logo{width: 5%;}
+    .navTogglerMenu{
+        display: none;
+    }
+    nav ul{
+        display: flex;}
+
+    .navigation{
+        all: unset;
+    }
+
+
+    .navigation{
+        display: flex ;
+        margin-left: auto;
+        list-style-type: none;
+        align-items: center;
+        padding: 0;  
+        width: 100%;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .navigation li{
+        border-bottom: none;
+    }
+
+
+
+
+
+
+
+
+
+
+   
+}
+
+@media screen and (min-width: 1000px) {
+
+
+}
+
+
