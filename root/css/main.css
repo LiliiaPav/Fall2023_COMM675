@@ -165,8 +165,7 @@ footer{
     padding-top: var(--spacer);
     width: 100%;
     margin-top: var(--spacer-dbl);
-    position: fixed;
-    bottom: 0;
+
 }
 
 
