@@ -173,7 +173,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto;
     line-height: var(--line-h);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     justify-items: center;
 
 
