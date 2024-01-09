@@ -19,6 +19,7 @@
 /*---------helper-----------*/
 --spacer: 1rem;
 --spacer-dbl: 2rem;
+--spacer-thr: 3rem;
 --border-radius: 6px;
 --shadow: 1px 1px 3px #D9C2BA;
 }
@@ -36,6 +37,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /*---------Navigation START-----------*/
@@ -114,6 +116,7 @@ header{
     justify-content: center;
     padding: var(--spacer-dbl);
     margin-bottom: var(--spacer-dbl);
+    width: 100%;
 }
 
 #bookNow .button{
@@ -135,7 +138,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
+    max-width: 90%;
+    margin-bottom: var(--spacer-dbl);
 }
 
 
@@ -166,7 +170,7 @@ footer{
     border-top: solid 15px var(--primary-color);
     padding: var(--spacer) var(--spacer);
     width: 100%;
-    margin: var(--spacer-dbl) 0 auto;
+    margin-top: auto;
     color: var(--neutral-lt-color);
     display: grid;
     gap: var(--spacer);
@@ -230,17 +234,24 @@ footer a{
 
 /*---------media-----------*/
 @media screen and (min-width: 800px) {
-    .logo{width: 5%;}
+
     .navTogglerMenu{
         display: none;
     }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacer);
+    }
+
+
     nav ul{
         display: flex;}
 
     .navigation{
         all: unset;
     }
-
 
     .navigation{
         display: flex ;
@@ -249,13 +260,37 @@ footer a{
         align-items: center;
         padding: 0;  
         width: 100%;
-        justify-content: flex-end;
+        justify-content: center;
         gap: 1rem;
     }
 
     .navigation li{
         border-bottom: none;
     }
+
+    nav ul a:link, nav ul a:visited{
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        width: 10%;
+        height: auto;
+        max-height: 125px;
+        max-width: 125px;
+    }
+
+    #bookNow{
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 30px; left: 240px;
+    }
+
+
+
+
+
 
     .hide{
         display: block;
@@ -280,8 +315,10 @@ footer a{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr auto auto;
         justify-items: center;
-        max-width: 90%;
-        margin: auto;
+        width: 90%;
+        margin: var(--spacer) auto var(--spacer-thr);
+        align-content: center;
+        max-width: 1200px;
     }
 
     #home img, #test{
@@ -296,19 +333,54 @@ footer a{
     
     footer{
         display: grid;
-        gap: var(--spacer);
+        gap: var(--spacer-dbl);
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         line-height: var(--line-h);
         font-size: 1.6rem;
         justify-items: center;
         align-items: center;
-
+        padding: var(--spacer-dbl) var(--spacer-dbl);
     }
 
-footer #social{  grid-column: 2 ;  }
+    footer br{
+        display: none;
+    }
 
-#hours{order:3}
+    footer dt, footer dd {
+        display: inline-block;
+    }
+
+    footer h3{
+        font-size: 2.4rem;
+    }
+    footer #social{  grid-column: 2 ;  }
+
+    #hours{
+        order:3;
+    }
+
+    #hours dl{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    footer section:first-of-type dl{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 350px;
+        
+    }
+
+    footer dd, footer dt{
+        margin: 0;
+    }
+
+    
 
 
 
@@ -316,6 +388,27 @@ footer #social{  grid-column: 2 ;  }
 }
 
 @media screen and (min-width: 1000px) {
+
+    nav ul a:link, nav ul a:visited{
+        font-size: 2.2rem;
+    }
+
+    header{
+        max-height: 220px;
+    }
+
+    nav{
+        max-height: 220px;
+    }
+
+    #bookNow{
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50px; left: 400px;
+    }
+
 
 
 }
