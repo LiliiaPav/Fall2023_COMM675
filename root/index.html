@@ -56,15 +56,19 @@
 -->
 
         <section id="bookNow">
-            <button><i class="fa-solid fa-phone"></i> Book Now</button>
+            <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
         <main id="home">
+            
+           <img class="hide" src="images/nailsHomeDesktop.jpg" alt="">
             <picture>
-                <source media="(max-width: 799px)" srcset="images/homePageMobile.jpg" >
                 <source media="(min-width: 800px)" srcset="images/homePageDesktop.jpg">
-                <img src="images/homePageMobile.jpg" alt="girl with a flower">
-              </picture>
+                <source media="(max-width: 799px)" srcset="images/homePageMobile.jpg" >
+                <img id='test' "images/homePageDesktop.jpg" alt="girl with a flower">
+            </picture>
+
+            <img class="hide" src="images/waxpotHomeDesktop.jpg" alt="">
 
             <h1>Be Our Guest</h1>
 
@@ -77,6 +81,7 @@
                 <dl>
                     <dt>Address:</dt>
                     <dd>1750 E. Palomar St.
+                        <br>
                         Suite 9
                         <br>
                         Chula Vista, CA 
