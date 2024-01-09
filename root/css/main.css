@@ -34,7 +34,8 @@ body {
     font-family: var(--primary-font);
     margin: auto;
     min-height: 100vh;
-
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------Navigation START-----------*/
@@ -165,7 +166,7 @@ footer{
     border-top: solid 15px var(--primary-color);
     padding: var(--spacer) var(--spacer);
     width: 100%;
-    margin-top: var(--spacer-dbl);
+    margin: var(--spacer-dbl) 0 auto;
     color: var(--neutral-lt-color);
     display: grid;
     gap: var(--spacer);
@@ -174,11 +175,15 @@ footer{
     line-height: var(--line-h);
     font-size: 1.3rem;
     justify-items: center;
+
+
+
 }
 
-footer p, footer #social{  
-    grid-column: 1 / span 2;  
-    justify-self:  center;}
+footer #social{ 
+    grid-column: 1 / span 2; 
+    text-align: center;
+}
 
 #social p{
     margin-top: var(--spacer);
@@ -281,14 +286,29 @@ footer a{
 
     #home img, #test{
         width: 100%;
-        margin: 0;
+        height: 100%;
     }
 
     #home picture img{
         width: 100%;
         margin: 0;
     }
-  
+    
+    footer{
+        display: grid;
+        gap: var(--spacer);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        line-height: var(--line-h);
+        font-size: 1.6rem;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+footer #social{  grid-column: 2 ;  }
+
+#hours{order:3}
 
 
 
