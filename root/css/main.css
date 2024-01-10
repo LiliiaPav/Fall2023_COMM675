@@ -41,7 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: hidden;
 }
 
 /*---------Navigation START-----------*/
