@@ -24,6 +24,8 @@
 --spacer-thr: 3rem;
 --border-radius: 6px;
 --shadow: 1px 1px 3px #D9C2BA;
+--inner-shadow: 3px 3px 3px rgba(255,255,255,0.2), 0 0 var(--tetriary-color);
+--border: solid 15px var(--primary-color);
 }
 
 
@@ -39,6 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 /*---------Navigation START-----------*/
@@ -105,14 +108,14 @@ nav ul a:active{ color: var(--tetriary-color); }
 
 header{
     background-color: var(--secondary-color);
-    border-bottom: solid 15px var(--primary-color);
+    border-bottom: var(--border);
     text-align: center;
     padding: var(--spacer);
     width: 100%;
 }
 
 #bookNow{
-    border-bottom: solid 15px var(--primary-color);
+    border-bottom: var(--border);
     display: flex;
     justify-content: center;
     padding: var(--spacer-dbl);
@@ -139,17 +142,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
+    width: 90%;
     margin-bottom: var(--spacer-dbl);
 }
 
-
-
 #home h1{
-    font: 3.6rem var(--headline-font);
+    font: var(--fs-h1) var(--headline-font);
     margin: var(--spacer-dbl) var(--spacer) var(--spacer);
     color: transparent;
-    text-shadow: 3px 3px 3px rgba(255,255,255,0.2), 0 0 var(--tetriary-color);
+    text-shadow: var(--inner-shadow);
 }
 
 #home p{
@@ -167,12 +168,11 @@ header{
     display: none;
 }
 
-
 /*---------Footer-----------*/
 
 footer{
     background-color: var(--secondary-color);
-    border-top: solid 15px var(--primary-color);
+    border-top: var(--border);
     padding: var(--spacer) var(--spacer);
     width: 100%;
     margin-top: auto;
@@ -184,9 +184,7 @@ footer{
     line-height: var(--line-h);
     font-size: 1.2rem;
     justify-items: center;
-
-
-
+    font-style: italic;
 }
 
 footer #social{ 
@@ -196,6 +194,7 @@ footer #social{
 
 #social p{
     margin-top: var(--spacer);
+    font-style:normal;
 }
 
 footer i{
@@ -211,12 +210,6 @@ footer h3{
     font-size: var(--fs-p);
 }
 
-footer dl{
-    display: block;
-    font-style: italic;
-}
-
-
 footer dd{
     margin-left: var(--spacer-dbl);
 }
@@ -225,22 +218,13 @@ footer dt{
     font-weight: var(--fw-b);
 }
 
-
 footer a{
     color: var(--neutral-lt-color);
     text-decoration: none;
 }
 
-
-
-
-
-
-
 /*---------media-----------*/
 @media screen and (min-width: 800px) {
-    
-
 
     .navTogglerMenu{
         display: none;
@@ -251,7 +235,6 @@ footer a{
         flex-direction: column;
         gap: var(--spacer);
     }
-
 
     nav ul{
         display: flex;}
@@ -294,13 +277,20 @@ footer a{
         top: 30px; left: 240px;
     }
 
-
-
-
-
-
     .hide{
         display: block;
+    }
+
+    #home{
+        display: grid;
+        gap: var(--spacer);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr auto auto;
+        justify-items: center;
+        width: 90%;
+        margin: var(--spacer) auto var(--spacer-thr);
+        align-content: center;
+        max-width: 1200px;
     }
 
     #home h1{
@@ -316,19 +306,7 @@ footer a{
         grid-column: 1 / span 3; 
     }
 
-    #home{
-        display: grid;
-        gap: var(--spacer);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr auto auto;
-        justify-items: center;
-        width: 90%;
-        margin: var(--spacer) auto var(--spacer-thr);
-        align-content: center;
-        max-width: 1200px;
-    }
-
-    #home img, #test{
+    #home img{
         width: 100%;
         height: 100%;
     }
@@ -354,13 +332,10 @@ footer a{
         display: none;
     }
 
-    footer dt, footer dd {
-        display: inline-block;
-    }
-
     footer h3{
         font-size: 2.4rem;
     }
+
     footer #social{  grid-column: 2 ;  }
 
     #hours{
@@ -386,12 +361,7 @@ footer a{
     footer dd, footer dt{
         margin: 0;
     }
-
-    
-
-
-
-   
+  
 }
 
 @media screen and (min-width: 1000px) {
