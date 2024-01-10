@@ -32,6 +32,7 @@
 /*---------general-----------*/
 html { 
     font-size: var(--fs-base);
+    min-width: 100%;
 }
 
 body {
@@ -273,7 +274,7 @@ footer a{
         margin: 0;
         padding: 0;
         position: absolute;
-        top: 30px; left: 240px;
+        top: 30px; 
     }
 
     .hide{
@@ -382,7 +383,7 @@ footer a{
         margin: 0;
         padding: 0;
         position: absolute;
-        top: 50px; left: 400px;
+        top: 50px; 
     }
 
 
