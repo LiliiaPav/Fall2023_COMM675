@@ -6,6 +6,8 @@
 --fw-l:100;
 --fw-b:600;
 --fs-base: 10px;
+--fs-h1: 3.6rem;
+--fs-p: 1.6rem;
 --line-h: 1.5;
 
 /*---------colors-----------*/
@@ -28,7 +30,6 @@
 /*---------general-----------*/
 html { 
     font-size: var(--fs-base);
-    min-width: 100%;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
 }
 
 .menu {
-    font-size: 4rem;
+    font-size: var(--fs-h1);
     color: var(--neutral-lt-color);
     align-self: center;
 }
@@ -71,13 +72,13 @@ border-bottom: solid var(--primary-color) 1px;
 ul li.logo{ margin-right: auto;}
 
 nav li a {
-    font-size: 1.5rem;
+    font-size: var(--fs-p);
     text-decoration: none;
     display: block;
 }
 
 nav ul a:link, nav ul a:visited{
-    font-size: 1.5rem;
+    font-size: var(--fs-p);
     color: var(--neutral-lt-color);
 }
 
@@ -155,7 +156,11 @@ header{
     width: 60%;
     text-align: center;
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: var(--fs-p);
+}
+
+#home img{
+    width: 100%;
 }
 
 .hide{
@@ -203,7 +208,7 @@ footer h3{
     font-weight: var(--fw-b);
     margin-bottom: var(--spacer);
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: var(--fs-p);
 }
 
 footer dl{
@@ -234,6 +239,8 @@ footer a{
 
 /*---------media-----------*/
 @media screen and (min-width: 800px) {
+    
+
 
     .navTogglerMenu{
         display: none;
@@ -269,7 +276,7 @@ footer a{
     }
 
     nav ul a:link, nav ul a:visited{
-        font-size: 1.8rem;
+        font-size: var(--fs-p);
     }
 
     .logo {
@@ -297,7 +304,7 @@ footer a{
     }
 
     #home h1{
-        font-size: 4.8rem;
+        --fs-h1: 4.8rem;
         grid-column: 1 / span 3; 
     }
 
@@ -305,7 +312,7 @@ footer a{
         width: 60%;
         text-align: center;
         line-height: var(--line-h);
-        font-size: 2.4rem;
+        --fs-p: 2.4rem;
         grid-column: 1 / span 3; 
     }
 
