@@ -275,6 +275,8 @@ footer a{
         padding: 0;
         position: absolute;
         top: 30px; 
+        max-width: 154px;
+        right: 100px;
     }
 
     .hide{
@@ -379,14 +381,8 @@ footer a{
     }
 
     #bookNow{
-        border: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
         top: 50px; 
-    }
-
-
+        }
 
 }
 
