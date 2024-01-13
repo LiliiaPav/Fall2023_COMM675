@@ -43,14 +43,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin-bottom: var(--spacer-dbl);
-}
-
 
 /*---------Navigation START-----------*/
 .logo {
@@ -238,7 +230,7 @@ footer a{
 
 /*---------media-----------*/
 @media screen and (min-width: 800px) {
-
+    
     .navTogglerMenu{
         display: none;
     }
