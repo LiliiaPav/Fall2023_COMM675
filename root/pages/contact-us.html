@@ -9,14 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <title>Cutie</title>
-        <link href="css/reset.css" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header>
             <nav>
-                <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
+                <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
                     <i class="fa-solid fa-bars menu openBtn"></i>
@@ -25,16 +25,63 @@
                         
                 <ul class="navigation">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="pages/library.html">Nail Services</a></li>
-                    <li><a href="local.html">Hair Services</a></li>
+                    <li class="submenu">
+                       <a href="manicures.html" aria-expanded="false">Nail Services</a>
+                        <ul>
+                           <li><a href="manicures.html">Manicures</a></li>
+                           <li><a href="pedicures.html">Pedicures</a></li>
+                           <li><a href="acrylics.html">Acrylics</a></li>
+                       </ul>
+                    </li>
+                    <li class="submenu">
+                       <a href="local.html">Hair Services</a>
+<!--
+                       <ul>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                       </ul>
+-->
+                    </li>
                     <li><a href="local.html">Waxing Services</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a class="current" href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu">
+                       <a href="about-us.html">About</a>
+<!--
+                        <ul>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                       </ul>
+-->
+                    </li>
+                    <li class="submenu"><a class="current" href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
 
        </header>
+       
+<!--
+       <nav aria-label="Main">
+		<ul>
+				<li><a href="…">Home</a></li>
+				<li><a href="…">Shop</a></li>
+				<li class="has-submenu">
+						<a href="…" aria-expanded="false">
+							Space Bears
+						</a>
+						<ul>
+								<li><a href="…">Space Bear 6</a></li>
+								<li><a href="…">Space Bear 6 Plus</a></li>
+						</ul>
+				</li>
+				<li><a href="…">Mars Cars</a></li>
+				<li><a href="…">Contact</a></li>
+		</ul>
+</nav>
+-->
 
        
 <!--
@@ -61,7 +108,7 @@
        
         <main id="contact-us">
             
-          
+          <h1>Contact us</h1>
           
           
           

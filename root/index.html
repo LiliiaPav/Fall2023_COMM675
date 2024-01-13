@@ -15,7 +15,7 @@
     
     <body>
         <header>
-            <nav>
+             <nav>
                 <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,15 +24,41 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a class="current" href="index.html">Home</a></li>
-                    <li><a href="pages/library.html">Nail Services</a></li>
-                    <li><a href="pages/local.html">Hair Services</a></li>
-                    <li><a href="pages/local.html">Waxing Services</a></li>
-                    <li><a href="pages/about-us.html">About</a></li>
-                    <li><a href="pages/faq.html">Contact Us</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
+                    <li class="submenu">
+                       <a href="pages/manicures.html" aria-expanded="false">Nail Services</a>
+                        <ul>
+                           <li><a href="pages/manicures.html">Manicures</a></li>
+                           <li><a href="pages/pedicures.html">Pedicures</a></li>
+                           <li><a href="pages/acrylics.html">Acrylics</a></li>
+                       </ul>
+                    </li>
+                    <li class="submenu">
+                       <a href="local.html">Hair Services</a>
+<!--
+                       <ul>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                       </ul>
+-->
+                    </li>
+                    <li><a href="local.html">Waxing Services</a></li>
+                    <li class="submenu">
+                       <a href="about-us.html">About</a>
+<!--
+                        <ul>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                       </ul>
+-->
+                    </li>
+                    <li class="submenu"><a href="pages/contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
-
 
        </header>
 

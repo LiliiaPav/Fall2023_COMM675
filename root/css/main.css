@@ -43,6 +43,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: var(--spacer-dbl);
+}
+
 
 /*---------Navigation START-----------*/
 .logo {
@@ -102,7 +110,12 @@ nav ul a:active{ color: var(--tetriary-color); }
 .navToggler{display: none;}
 .navToggler:checked ~ .navTogglerMenu .closeBtn{display: block;}
 .navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
-
+ li.submenu>ul { display: none; }
+ li.submenu:hover ul { 
+     display: block;
+     background-color: grey;
+     width: auto;
+}
 /*---------Navigation ENDS-----------*/
 
 
@@ -257,11 +270,21 @@ footer a{
     .navigation li{
         border-bottom: none;
     }
-
+    li.submenu{
+        position: relative;
+    }
     nav ul a:link, nav ul a:visited{
         font-size: var(--fs-p);
     }
-
+    li.submenu>ul { 
+        display: none;
+        position: absolute;
+    }
+    nav > ul li:hover ul { 
+        display: block;
+        background-color: grey;
+        width: auto;
+}
     .logo {
         width: 10%;
         height: auto;
