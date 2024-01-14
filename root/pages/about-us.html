@@ -24,56 +24,68 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a class="../index.html" href="index.html">Home</a></li>
-                    <li><a href="pages/library.html">Nail Services</a></li>
-                    <li><a href="pages/local.html">Hair Services</a></li>
-                    <li><a href="pages/local.html">Waxing Services</a></li>
-                    <li><a href="pages/"about-us.html">About</a></li>
-                    <li><a href="pages/local.html">Contact Us</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="submenu">
+                       <a href="manicures.html" aria-expanded="false">Nail Services</a>
+                        <ul>
+                           <li><a href="manicures.html">Manicures</a></li>
+                           <li><a href="pedicures.html">Pedicures</a></li>
+                           <li><a href="acrylics.html">Acrylics</a></li>
+                       </ul>
+                    </li>
+                    <li class="submenu">
+                       <a href="local.html">Hair Services</a>
+<!--
+                       <ul>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                           <li><a href=""></a></li>
+                       </ul>
+-->
+                    </li>
+                    <li><a href="wax.html">Waxing Services</a></li>
+                    <li class="submenu">
+                       <a href="about-us.html">About</a>
+
+                        <ul>
+                           <li><a href="review.html">Review</a></li>
+                       </ul>
+
+                    </li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
 
+
        </header>
-
-       
-<!--
-<div class="navbar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-          </div>
-
--->
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="home">
+        <main id="about-us">
+           
+           <div id="home">
+                   <h1>About Us</h1>
+
+            <p>Custies is known for our professional team, we aim to provide personalized services to our clients</p>
+    
+            <p>We use high-quality products and prioritize cleanliness and customer satisfaction. If you're interested in booking an appointment or learning more about the salon, you can contact us directly.</p>
+           </div>
             
-           <img class="hide" src="../images/about-Nail-style.jpg" alt="nail-style">
+           
             <picture>
-                <source media="(min-width: 800px)" src="images/cutieLogoDesktop.png">
-                <source media="(max-width: 799px)" src="images/Cutie-logo.png">
+                <source media="(min-width: 800px)" srcset="../images/cutiescrew.jpg">
+                <source media="(max-width: 799px)" srcset="../images/cutiescrew.jpg">
                 
-                <img src="images/Cutie-logo.png" alt="logo">
+                <img src="../images/cutiescrew.jpg" alt="crew">
             </picture>
 
-            <img class="hide" src="../images/about-Hair-style.jpg" alt="hair-style">
 
-            <h1>About Us</h1>
-
-            <p>Our salon will offer a variety of unisex services including nail care, hair styling, and waxing. We are known for our professional team, we aim to provide personalized services to our clients. We use high-quality products and prioritize cleanliness and customer satisfaction. If you're interested in booking an appointment or learning more about the salon, you can contact them directly.</p>
+         
+            
         </main>
 
        <footer>
