@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-/*---------Navigation START-----------*/
+/*---------------------------Navigation START---------------------------*/
 .logo {
     width: 30%;
     height: auto;
@@ -116,7 +116,7 @@ nav ul a:active{ color: var(--tetriary-color); }
 }
 
 
-/*---------Navigation ENDS-----------*/
+/*---------------------------Navigation ENDS---------------------------*/
 
 
 header{
@@ -149,7 +149,15 @@ header{
     margin-right: var(--spacer);
 }
 
-/*---------Main-----------*/
+main h1{
+    font: var(--fs-h1) var(--headline-font);
+    margin: var(--spacer-dbl) var(--spacer) var(--spacer);
+    color: transparent;
+    text-shadow: var(--inner-shadow);
+    text-align: center;
+}
+
+/*---------------------------HOME PAGE---------------------------*/
 
 #home{
     display: flex;
@@ -157,13 +165,6 @@ header{
     align-items: center;
     width: 90%;
     margin-bottom: var(--spacer-dbl);
-}
-
-main h1{
-    font: var(--fs-h1) var(--headline-font);
-    margin: var(--spacer-dbl) var(--spacer) var(--spacer);
-    color: transparent;
-    text-shadow: var(--inner-shadow);
 }
 
 #home p{
@@ -181,7 +182,87 @@ main h1{
     display: none;
 }
 
-/*---------Footer-----------*/
+/*---------------------------NAIL MANICURE PAGE---------------------------*/
+
+/*---------------------------NAIL PEDICURE PAGE---------------------------*/
+
+
+/*---------------------------NAIL ACRILIC PAGE---------------------------*/
+
+
+/*---------------------------HAIR PAGE---------------------------*/
+
+/*---------------------------WAX PAGE---------------------------*/
+
+/*---------------------------ABOUT PAGE---------------------------*/
+
+
+/*---------------------------FAQ PAGE---------------------------*/
+
+#faq article{
+    margin: var(--spacer-thr) auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacer-thr);
+    width: 80%;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#faq > *{
+    text-align: center;
+}
+
+#faq h2{
+    margin-top: var(--spacer-dbl);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+}
+
+#faq p{
+    font-size: var(--fs-p);
+    margin-bottom: var(--spacer-dbl);
+}
+
+#faq section li{
+    font-size: var(--fs-p);
+    text-align: left;
+    margin-bottom: var(--spacer);
+}
+
+#faq section i{
+    font-size: var(--fs-p);
+    margin-right: var(--spacer);
+}
+
+
+/*---------------------------REVIEW PAGE---------------------------*/
+
+
+
+/*---------------------------GALLERY PAGE---------------------------*/
+
+
+
+/*---------------------------CONTACT PAGE---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------FOOTER---------------------------*/
 
 footer{
     background-color: var(--secondary-color);
@@ -236,50 +317,11 @@ footer a{
     text-decoration: none;
 }
 
-/*---------FAQ-----------*/
-
-#faq article{
-    margin: var(--spacer-thr) auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--spacer-thr);
-    width: 80%;
-    line-height: 1.5;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-#faq > *{
-    text-align: center;
-}
-
-#faq h2{
-    margin-top: var(--spacer-dbl);
-    font-size: var(--fs-p);
-    font-weight: var(--fw-b);
-}
-
-#faq p{
-    font-size: var(--fs-p);
-    margin-bottom: var(--spacer-dbl);
-}
-
-#faq section li{
-    font-size: var(--fs-p);
-    text-align: left;
-    margin-bottom: var(--spacer);
-}
-
-#faq section i{
-    font-size: var(--fs-p);
-    margin-right: var(--spacer);
-}
 
 
 
-/*---------media-----------*/
+
+/*---------------------------MEDIA---------------------------*/
 @media screen and (min-width: 800px) {
     
     .navTogglerMenu{
