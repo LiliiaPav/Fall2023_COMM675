@@ -185,6 +185,33 @@ main h1{
 }
 
 /*---------------------------NAIL MANICURE PAGE---------------------------*/
+#manicures{
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-bottom: var(--spacer-thr);
+}
+#manicures picture{
+    margin: 0 auto var(--spacer-thr);
+}
+#manicures img{
+    width: 100%;
+    max-width: 350px;
+}
+
+#manicures dt{
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+    line-height: var(--line-h);
+    text-align: left;
+}
+
+#manicures dd{
+    font-size: var(--fs-p);
+    line-height: var(--line-h);
+    margin-bottom: 1.6rem;
+}
 
 /*---------------------------NAIL PEDICURE PAGE---------------------------*/
 
@@ -456,7 +483,27 @@ footer a{
         margin: 0;
     }
     
+/*---------------------------MEDIA NAIL PAGE---------------------------*/
 
+    #manicures{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr;
+        gap: 8rem;
+    }
+    #manicures h1{
+        grid-column: 1 / span 2;
+    }
+    #manicures picture{
+        margin: 0;
+        order: 1;
+        align-self: center;
+    }
+    #manicures img{
+        max-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
 
 
 /*---------------------------MEDIA FAQ PAGE---------------------------*/
@@ -559,6 +606,13 @@ footer a{
     #bookNow{
         top: 50px; 
         }
+    
+    
+/*---------------------- MEDIA NAIL PAGE-------------------------*/
+    #manicures{
+       max-width: 1200px;
+    }
+
 
 }
 
