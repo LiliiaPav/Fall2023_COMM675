@@ -44,7 +44,7 @@ body {
     align-items: center;
 }
 
-/*---------Navigation START-----------*/
+/*---------------------------Navigation START---------------------------*/
 .logo {
     width: 30%;
     height: auto;
@@ -104,19 +104,21 @@ nav ul a:active{ color: var(--tetriary-color); }
 .navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
  li.submenu>ul { display: none; }
  li.submenu:hover ul { 
-     display: block;
-     background-color: grey;
-     width: auto;
+    background-color: var(--primary-color);
+    display: block;
+    width: auto;
+}
+
+li.submenu:active ul { 
+    display: block;
 }
 
 .submenu ul li{
-    background-color: var(--primary-color);
-    border: 0.5px solid;
-    border-color: var(--neutral-lt-color);
+    border: 1px solid var(--secondary-color);
 }
 
 
-/*---------Navigation ENDS-----------*/
+/*---------------------------Navigation ENDS---------------------------*/
 
 
 header{
@@ -149,7 +151,15 @@ header{
     margin-right: var(--spacer);
 }
 
-/*---------Main-----------*/
+main h1, legend {
+    font: var(--fs-h1) var(--headline-font);
+    margin: var(--spacer-dbl) var(--spacer) var(--spacer);
+    color: transparent;
+    text-shadow: var(--inner-shadow);
+    text-align: center;
+}
+
+/*---------------------------HOME PAGE---------------------------*/
 
 #home{
     display: flex;
@@ -159,14 +169,7 @@ header{
     margin-bottom: var(--spacer-dbl);
 }
 
-#home h1{
-    font: var(--fs-h1) var(--headline-font);
-    margin: var(--spacer-dbl) var(--spacer) var(--spacer);
-    color: transparent;
-    text-shadow: var(--inner-shadow);
-}
-
-#home p{
+#home p, label{
     width: 60%;
     text-align: center;
     line-height: 1.5;
@@ -181,7 +184,116 @@ header{
     display: none;
 }
 
-/*---------Footer-----------*/
+/*---------------------------NAIL MANICURE PAGE---------------------------*/
+
+/*---------------------------NAIL PEDICURE PAGE---------------------------*/
+
+
+/*---------------------------NAIL ACRILIC PAGE---------------------------*/
+
+
+/*---------------------------HAIR PAGE---------------------------*/
+
+/*---------------------------WAX PAGE---------------------------*/
+
+/*---------------------------ABOUT PAGE---------------------------*/
+
+.crew-img {
+    width: 70%;
+    align-items: center;
+}
+
+
+/*---------------------------FAQ PAGE---------------------------*/
+
+#faq article{
+    margin: var(--spacer-thr) auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacer-thr);
+    width: 80%;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#faq > *{
+    text-align: center;
+}
+
+#faq h2{
+    margin-top: var(--spacer-dbl);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+}
+
+#faq p{
+    font-size: var(--fs-p);
+    margin-bottom: var(--spacer-dbl);
+}
+
+#faq section li{
+    font-size: var(--fs-p);
+    text-align: left;
+    margin-bottom: var(--spacer);
+}
+
+#faq section i{
+    font-size: var(--fs-p);
+    margin-right: var(--spacer);
+}
+
+
+/*---------------------------REVIEW PAGE---------------------------*/
+
+
+
+
+/*---------------------------GALLERY PAGE---------------------------*/
+#gallery{
+    display: grid;
+    gap: var(--spacer);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    margin: var(--spacer-thr);
+}
+
+#gallery img{
+    width: 100%;
+    height: 100%;
+}
+
+#gallery h1, #gallery section{ 
+    grid-column: 1 / span 2; 
+    text-align: center;
+}
+
+#gallery .moveIt{
+    order: 2;
+}
+
+#gallery .slide{
+    display: none;
+}
+
+/*---------------------------CONTACT PAGE---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------FOOTER---------------------------*/
 
 footer{
     background-color: var(--secondary-color);
@@ -236,9 +348,14 @@ footer a{
     text-decoration: none;
 }
 
-/*---------media-----------*/
+
+
+
+
+/*---------------------------MEDIA---------------------------*/
 @media screen and (min-width: 800px) {
-    
+
+/*---------------------------MEDIA NAV---------------------------*/
     .navTogglerMenu{
         display: none;
     }
@@ -292,6 +409,7 @@ footer a{
         max-width: 125px;
     }
 
+/*---------------------------MEDIA BOOK NOW---------------------------*/
     #bookNow{
         border: none;
         margin: 0;
@@ -301,6 +419,8 @@ footer a{
         max-width: 154px;
         right: 100px;
     }
+
+/*---------------------------MEDIA HOME---------------------------*/
 
     .hide{
         display: block;
@@ -341,6 +461,42 @@ footer a{
         margin: 0;
     }
     
+
+
+
+/*---------------------------MEDIA FAQ PAGE---------------------------*/
+    #faq section ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+
+
+/*---------------------------MEDIA GALLERY PAGE---------------------------*/
+
+#gallery{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    margin: var(--spacer-thr);
+}
+
+#gallery h1{ 
+    grid-column: 1 / span 4; 
+}
+
+#gallery section{ 
+    grid-column: 2 / span 2; 
+}
+
+#gallery .moveIt{
+    order: 0;
+}
+
+
+
+/*---------------------------MEDIA FOOTER---------------------------*/
+
     footer{
         display: grid;
         gap: var(--spacer-dbl);
@@ -386,8 +542,10 @@ footer a{
     footer dd, footer dt{
         margin: 0;
     }
-  
+
 }
+
+/*---------------------------MEDIA 1000px---------------------------*/
 
 @media screen and (min-width: 1000px) {
 
@@ -408,3 +566,6 @@ footer a{
         }
 
 }
+
+
+
