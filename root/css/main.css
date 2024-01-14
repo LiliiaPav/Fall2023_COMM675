@@ -104,15 +104,17 @@ nav ul a:active{ color: var(--tetriary-color); }
 .navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
  li.submenu>ul { display: none; }
  li.submenu:hover ul { 
-     display: block;
-     background-color: grey;
-     width: auto;
+    background-color: var(--primary-color);
+    display: block;
+    width: auto;
+}
+
+li.submenu:active ul { 
+    display: block;
 }
 
 .submenu ul li{
-    background-color: var(--primary-color);
-    border: 0.5px solid;
-    border-color: var(--neutral-lt-color);
+    border: 1px solid var(--secondary-color);
 }
 
 
@@ -270,11 +272,6 @@ main h1{
 #gallery .slide{
     display: none;
 }
-
-
-
-
-
 
 /*---------------------------CONTACT PAGE---------------------------*/
 
