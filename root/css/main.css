@@ -267,6 +267,9 @@ main h1{
     order: 2;
 }
 
+#gallery .slide{
+    display: none;
+}
 
 
 
