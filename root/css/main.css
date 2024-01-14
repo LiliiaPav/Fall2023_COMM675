@@ -249,19 +249,20 @@ main h1{
     display: grid;
     gap: var(--spacer);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     margin: var(--spacer-thr);
 }
 
 #gallery img{
     width: 100%;
+    height: 100%;
 }
-
 
 #gallery h1, #gallery section{ 
-grid-column: 1 / span 2; 
-text-align: center;
+    grid-column: 1 / span 2; 
+    text-align: center;
 }
+
 #gallery .moveIt{
     order: 2;
 }
@@ -348,7 +349,8 @@ footer a{
 
 /*---------------------------MEDIA---------------------------*/
 @media screen and (min-width: 800px) {
-    
+
+/*---------------------------MEDIA NAV---------------------------*/
     .navTogglerMenu{
         display: none;
     }
@@ -402,6 +404,7 @@ footer a{
         max-width: 125px;
     }
 
+/*---------------------------MEDIA BOOK NOW---------------------------*/
     #bookNow{
         border: none;
         margin: 0;
@@ -411,6 +414,8 @@ footer a{
         max-width: 154px;
         right: 100px;
     }
+
+/*---------------------------MEDIA HOME---------------------------*/
 
     .hide{
         display: block;
@@ -451,6 +456,42 @@ footer a{
         margin: 0;
     }
     
+
+
+
+/*---------------------------MEDIA FAQ PAGE---------------------------*/
+    #faq section ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+
+
+/*---------------------------MEDIA GALLERY PAGE---------------------------*/
+
+#gallery{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    margin: var(--spacer-thr);
+}
+
+#gallery h1{ 
+    grid-column: 1 / span 4; 
+}
+
+#gallery section{ 
+    grid-column: 2 / span 2; 
+}
+
+#gallery .moveIt{
+    order: 0;
+}
+
+
+
+/*---------------------------MEDIA FOOTER---------------------------*/
+
     footer{
         display: grid;
         gap: var(--spacer-dbl);
@@ -497,14 +538,9 @@ footer a{
         margin: 0;
     }
 
-    #faq section ul{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-  
 }
+
+/*---------------------------MEDIA 1000px---------------------------*/
 
 @media screen and (min-width: 1000px) {
 
