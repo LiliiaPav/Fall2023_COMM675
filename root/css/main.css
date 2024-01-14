@@ -159,7 +159,7 @@ header{
     margin-bottom: var(--spacer-dbl);
 }
 
-#home h1{
+main h1{
     font: var(--fs-h1) var(--headline-font);
     margin: var(--spacer-dbl) var(--spacer) var(--spacer);
     color: transparent;
@@ -235,6 +235,49 @@ footer a{
     color: var(--neutral-lt-color);
     text-decoration: none;
 }
+
+/*---------FAQ-----------*/
+
+#faq article{
+    margin: var(--spacer-thr) auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacer-thr);
+    width: 80%;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#faq > *{
+    text-align: center;
+}
+
+#faq h2{
+    margin-top: var(--spacer-dbl);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+}
+
+#faq p{
+    font-size: var(--fs-p);
+    margin-bottom: var(--spacer-dbl);
+}
+
+#faq section li{
+    font-size: var(--fs-p);
+    text-align: left;
+    margin-bottom: var(--spacer);
+}
+
+#faq section i{
+    font-size: var(--fs-p);
+    margin-right: var(--spacer);
+}
+
+
 
 /*---------media-----------*/
 @media screen and (min-width: 800px) {
@@ -386,6 +429,13 @@ footer a{
     footer dd, footer dt{
         margin: 0;
     }
+
+    #faq section ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
   
 }
 
