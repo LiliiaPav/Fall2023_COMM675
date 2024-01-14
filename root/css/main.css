@@ -624,7 +624,7 @@ footer a{
     }
     #manicures dl{
         grid-column: 1 /  2;
-        min-width: 450px;
+        min-width: 500px;
     }
    
 }
