@@ -204,7 +204,6 @@ main h1{
     font-size: var(--fs-p);
     font-weight: var(--fw-b);
     line-height: var(--line-h);
-    text-align: left;
 }
 
 #manicures dd{
@@ -487,13 +486,15 @@ footer a{
 
     #manicures{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:  1.5fr 1fr;
         grid-template-rows: auto 1fr;
-        gap: 8rem;
+        column-gap: 5rem;
     }
     #manicures h1{
         grid-column: 1 / span 2;
+        margin-bottom: var(--spacer-thr);
     }
+
     #manicures picture{
         margin: 0;
         order: 1;
@@ -501,9 +502,11 @@ footer a{
     }
     #manicures img{
         max-width: 100%;
-        height: 100vh;
-        object-fit: cover;
     }
+     #manicures>dt,#manicures>dd{
+        font-size: 1.8rem;
+    }
+    
 
 
 /*---------------------------MEDIA FAQ PAGE---------------------------*/
@@ -610,10 +613,20 @@ footer a{
     
 /*---------------------- MEDIA NAIL PAGE-------------------------*/
     #manicures{
-       max-width: 1200px;
+        max-width: 1050px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr;
+        column-gap: 8rem;
     }
-
-
+    #manicures h1{
+        grid-column: 1 / span 2;
+    }
+    #manicures dl{
+        grid-column: 1 /  2;
+        min-width: 450px;
+    }
+   
 }
 
 
