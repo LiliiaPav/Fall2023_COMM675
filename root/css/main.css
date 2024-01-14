@@ -243,7 +243,32 @@ main h1{
 
 
 
+
 /*---------------------------GALLERY PAGE---------------------------*/
+#gallery{
+    display: grid;
+    gap: var(--spacer);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    margin: var(--spacer-thr);
+}
+
+#gallery img{
+    width: 100%;
+}
+
+
+#gallery h1, #gallery section{ 
+grid-column: 1 / span 2; 
+text-align: center;
+}
+#gallery .moveIt{
+    order: 2;
+}
+
+
+
+
 
 
 
