@@ -185,6 +185,11 @@ main h1{
     display: none;
 }
 
+@media screen and (min-width: 400px){
+.logo {
+    width: 20%;
+}
+}
 /*---------------------------NAIL MANICURE PAGE---------------------------*/
 
 /*---------------------------NAIL PEDICURE PAGE---------------------------*/
@@ -224,31 +229,35 @@ main h1{
 
 /* RESPONSIVE HAIR SERVICES*/
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
     #hairColor {
-        width: 70%;
+        width: 690px;
+    }
+    #hairColor img {
+        width: 400px;
     }
 }
 @media screen and (min-width: 1050px) {
     #hairColor  {
         display: grid;
-        grid-template-columns:  1.5fr 1fr;
-        grid-template-rows: auto 1fr;
-        column-gap: 3rem;
+        grid-template-columns:  2fr 1fr;
+        gap: 3rem;
         margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 80%;
+        width: 1040px;
     }
 
     #hairColor h1 {
         grid-column: 1 / span 2;
         margin-bottom: var(--spacer-thr);
 }
+    
+    #hairColor img {
+        width: 500px;
+    }
 
     #hairColor picture {
-        margin: 0;
         order: 1;
         align-self: center;
-        justify-self: center;
     }
 
 }
