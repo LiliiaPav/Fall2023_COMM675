@@ -499,7 +499,11 @@ footer a{
         margin: 0;
         order: 1;
         align-self: center;
-        justify-self: center;
+      
+    }
+    #manicures img, pedicures img acrylics img{
+        max-height: 680px;
+        object-fit: cover;
     }
 
      #manicures dd,#pedicures dd,#acrylicss dd,#manicures dt, #pedicures dt, #acrylics dt{
@@ -616,6 +620,7 @@ footer a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 1fr;
+        column-gap: 5rem;
     }
     #manicures h1, #pedicures h1, #acrylics h1{
         grid-column: 1 / span 2;
