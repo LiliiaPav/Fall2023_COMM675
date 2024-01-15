@@ -224,13 +224,14 @@ main h1{
 /*---------------------------WAX PAGE---------------------------*/
 
 /*---------------------------ABOUT PAGE---------------------------*/
+#home article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
 
-.crew-img {
-    width: 90%;
-    
-}
-
-
+.crew-img{
+        max-width: 500px;
+    }
 /*---------------------------FAQ PAGE---------------------------*/
 
 #faq article{
@@ -488,8 +489,10 @@ footer a{
         margin: 0;
     }
     
+/*---------------------------MEDIA ABOUT PAGE---------------------------*/
 
-
+#home article{
+    grid-column: 1 / span 3;}
 
 /*---------------------------MEDIA FAQ PAGE---------------------------*/
     #faq section ul{
