@@ -7,6 +7,7 @@
 --fw-b:600;
 --fs-base: 10px;
 --fs-h1: 3.6rem;
+--fs-sub: 1.8rem;
 --fs-p: 1.6rem;
 --line-h: 1.5;
 
@@ -193,7 +194,64 @@ main h1{
 
 
 /*---------------------------HAIR PAGE---------------------------*/
+#hairColor {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-bottom: var(--spacer-thr);
+}
 
+#hairColor picture {
+    margin: 0 auto var(--spacer-thr);
+}
+
+#hairColor img{
+    width: 100%;
+}
+
+#hairColor dt {
+    font-size: var(--fs-sub);
+    font-weight: var(--fw-b);
+    line-height: var(--line-h);
+}
+
+#hairColor dd {
+    font-size: var(--fs-p);
+    line-height: var(--line-h);
+    margin-bottom: 1.6rem;
+}
+
+/* RESPONSIVE HAIR SERVICES*/
+
+@media screen and (min-width: 800px){
+    #hairColor {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1050px) {
+    #hairColor  {
+        display: grid;
+        grid-template-columns:  1.5fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 3rem;
+        margin-bottom: calc(var(--spacer-dbl)*3);
+        width: 80%;
+    }
+
+    #hairColor h1 {
+        grid-column: 1 / span 2;
+        margin-bottom: var(--spacer-thr);
+}
+
+    #hairColor picture {
+        margin: 0;
+        order: 1;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
 /*---------------------------WAX PAGE---------------------------*/
 
 /*---------------------------ABOUT PAGE---------------------------*/
