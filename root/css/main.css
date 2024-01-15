@@ -487,7 +487,8 @@ footer a{
         display: grid;
         grid-template-columns:  1.5fr 1fr;
         grid-template-rows: auto 1fr;
-        column-gap: 5rem;
+        column-gap: 3rem;
+        margin-bottom: calc(var(--spacer-dbl)*3);
     }
     #manicures h1{
         grid-column: 1 / span 2;
