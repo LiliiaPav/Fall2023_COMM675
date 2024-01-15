@@ -196,7 +196,7 @@ main h1{
     margin: 0 auto var(--spacer-thr);
 }
 #manicures img, #pedicures img, #acrylics img{
-    max-width: 350px;
+    width: 100%;
 }
 
 #manicures dt, #pedicures dt, #acrylics dt{
@@ -501,10 +501,7 @@ footer a{
         align-self: center;
         justify-self: center;
     }
-   #manicures img, #pedicures img, #acrylics img{
-        max-width: 100%;
-        max-height: 615px;
-    }
+
      #manicures dd,#pedicures dd,#acrylicss dd,#manicures dt, #pedicures dt, #acrylics dt{
         font-size: 1.8rem;
     }

@@ -92,13 +92,15 @@
             
           <h1>Contact us</h1>
           
-          <form action="">
-              <label for=""></label>
-              <input type="text">
-              <label for=""></label>
-              <input type="text">
-              <label for=""></label>
-              <input type="text">
+          <form action="mailto:cutie@mail.com" method="post" id="contactForm">
+              <label for="full-name">Name</label>
+              <input type="text" id="full-name" name="full_name" value="" placeholder="" >
+              <label for="guestEmail">Email</label>
+              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" >
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" value="" placeholder="">
+              
+              <input type="submit" id="submitCform" name="submitCform" value="Send Message">
           </form>
           
           
