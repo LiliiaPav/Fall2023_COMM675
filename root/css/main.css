@@ -161,7 +161,7 @@ main h1{
 
 /*---------------------------HOME PAGE---------------------------*/
 
-#home{
+#home, #about{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +169,7 @@ main h1{
     margin-bottom: var(--spacer-dbl);
 }
 
-#home p{
+#home p, #about p{
     width: 60%;
     text-align: center;
     line-height: 1.5;
@@ -224,16 +224,11 @@ main h1{
 /*---------------------------WAX PAGE---------------------------*/
 
 /*---------------------------ABOUT PAGE---------------------------*/
-#home article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;}
 
-#home article p{
-    width: 75%;}
 
 .crew-img{
-        max-width: 500px;
+    width: 100%;
+    max-width: 500px;
     }
 /*---------------------------FAQ PAGE---------------------------*/
 
@@ -494,8 +489,9 @@ footer a{
     
 /*---------------------------MEDIA ABOUT PAGE---------------------------*/
 
-#home article{
-    grid-column: 1 / span 3;}
+#about{
+    margin-top: var(--spacer-thr);
+}
 
 /*---------------------------MEDIA FAQ PAGE---------------------------*/
     #faq section ul{
