@@ -300,6 +300,9 @@ main h1{
 }
 
 /*---------------------------CONTACT PAGE---------------------------*/
+body#strech{
+   
+}
 ul.z-opacity{
     z-index: 10;
 }  
@@ -307,14 +310,16 @@ section#bookNow.noMargin{
     margin-bottom: 0;
 }
 #contactUs{
+   /*---local variable---*/
     --fw-submit: 400;
     width: 100%;
+    min-height:100%;
     position: relative;
     background-color: rgba(225,159,174,.3);
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
 }
 #contactUs::after{
     content: "";
@@ -395,13 +400,32 @@ input#submitForm{
     cursor: pointer;
 }
 
-/*
-iframe {
-  width: 100%;
-  aspect-ratio: 16/9; //アスペクト比（縦横比）を指定
+div#mapWrapper{
+    position: relative;
+    width: 90%;
+    padding-bottom: 57%;
+    height: 0;
+    overflow: hidden;
+    margin: var(--spacer-dbl) auto var(--spacer-thr);
 }
-*/
 
+div#mapWrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+}
+div#mapWrapper img{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 10;
+    
+}
 
 
 
@@ -643,6 +667,31 @@ footer a{
 
 
 /*---------------------------MEDIA CONTACT US------------------------*/
+    #contactUs{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr;
+        column-gap: var(--spacer-dbl);
+        padding-bottom: var(--spacer-thr);
+    }
+    #contactUs h1{
+        grid-column: 1/ span 2;
+    }
+    form#contactForm{
+        width: 90%;
+        margin: 0;
+        justify-self: end;
+    }
+    input#submitForm{
+        margin-bottom: 0;
+    }
+    div#mapWrapper{
+        margin: 0;
+        height: 100%;
+    }
+    div#mapWrapper ifram{
+        height: 100%;
+        width: auto;
+    }
    
 
 
@@ -727,6 +776,7 @@ footer a{
     }
     #manicures h1, #pedicures h1, #acrylics h1{
         grid-column: 1 / span 2;
+        --fs-h1:4.8rem;
     }
     #manicures dl, #pedicures dl, #acrylics dl{
         grid-column: 1 /  2;
@@ -737,7 +787,13 @@ footer a{
     
 /*----------------- MEDIA CONTACT PAGE--------------------------*/
     #contactUs{
-        max-width: 1200px; 
+        max-width: 1200px;
+        min-height: 100%;
+        padding: var(--spacer) 0 calc(var(--spacer-thr)*2);
+    }
+    #contactUs h1{
+        --fs-h1: 4.8rem;
+        margin-bottom: var(--spacer-thr);
     }
    
 }
