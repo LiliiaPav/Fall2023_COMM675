@@ -199,7 +199,7 @@ main h1{
 
 
 /*---------------------------HAIR PAGE---------------------------*/
-#hairColor {
+#hair {
     width: 90%;
     display: grid;
     grid-template-columns: auto;
@@ -207,21 +207,21 @@ main h1{
     margin-bottom: var(--spacer-thr);
 }
 
-#hairColor picture {
+#hair picture {
     margin: 0 auto var(--spacer-thr);
 }
 
-#hairColor img{
+#hair img{
     width: 100%;
 }
 
-#hairColor dt {
+#hair dt {
     font-size: var(--fs-sub);
     font-weight: var(--fw-b);
     line-height: var(--line-h);
 }
 
-#hairColor dd {
+#hair dd {
     font-size: var(--fs-p);
     line-height: var(--line-h);
     margin-bottom: 1.6rem;
@@ -229,16 +229,16 @@ main h1{
 
 /* RESPONSIVE HAIR SERVICES*/
 
-@media screen and (min-width: 700px){
-    #hairColor {
-        width: 690px;
+@media screen and (min-width: 800px){
+    #hair {
+        width: 790px;
     }
-    #hairColor img {
+    #hairColor, #haircuts img {
         width: 400px;
     }
 }
 @media screen and (min-width: 1050px) {
-    #hairColor  {
+    #hair {
         display: grid;
         grid-template-columns:  2fr 1fr;
         gap: 3rem;
@@ -246,16 +246,16 @@ main h1{
         width: 1040px;
     }
 
-    #hairColor h1 {
+    #hair h1 {
         grid-column: 1 / span 2;
         margin-bottom: var(--spacer-thr);
 }
     
-    #hairColor img {
+    #hair img {
         width: 500px;
     }
 
-    #hairColor picture {
+    #hair picture {
         order: 1;
         align-self: center;
     }
