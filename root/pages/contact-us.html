@@ -23,9 +23,9 @@
                     <i class="fa-solid fa-xmark menu closeBtn"></i>
                 </label>
                         
-                <ul class="navigation">
+                <ul class="navigation z-opacity">
                     <li><a href="../index.html">Home</a></li>
-                    <li class="submenu">
+                    <li class="submenu z-opacity">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
@@ -33,7 +33,7 @@
                            <li><a href="acrylics.html">Acrylics</a></li>
                        </ul>
                     </li>
-                    <li class="submenu">
+                    <li class="submenu z-opacity">
                        <a href="#">Hair Services</a>
 
                        <ul>
@@ -44,16 +44,16 @@
                        </ul>
 
                     </li>
+                    
                     <li><a href="wax.html">Waxing Services</a></li>
 
-                    <li class="submenu">
+                    <li class="submenu z-opacity">
                        <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="faq.html">FAQ</a></li>
                            <li><a href="#">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
-
                     </li>
                     <li class="submenu current "><a href="contact-us.html">Contact Us</a></li>
                 </ul>
@@ -84,30 +84,41 @@
 
        
 
-        <section id="bookNow">
+        <section id="bookNow" class="noMargin">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="contact-us">
+        <main id="contactUs">
             
           <h1>Contact us</h1>
           
           <form action="mailto:cutie@mail.com" method="post" id="contactForm">
-              <label for="full-name">Name</label>
-              <input type="text" id="full-name" name="full_name" value="" placeholder="" >
-              <label for="guestEmail">Email</label>
-              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" >
-              <label for="subject">Subject</label>
+             
+              <label for="full-name"><p>Name</p></label>
+              <input type="text" id="full-name" name="full-name" value="" placeholder="" required autofocus>
+              
+              <label for="guestEmail"><p>Email</p></label>
+              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" required>
+              
+              <label for="subject"><p>Subject</p></label>
               <input type="text" id="subject" name="subject" value="" placeholder="">
               
-              <input type="submit" id="submitCform" name="submitCform" value="Send Message">
+              <label for="message"><p>Your message</p></label>
+              <textarea name="message" id="message" placeholder=""></textarea>
+              
+              
+              <input type="submit" id="submitForm" value="Send Message">
+              
           </form>
           
-          
-          
-          
-          
-          
+<!--
+          <div id="map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5809.644310727902!2d-116.98826777488179!3d32.63352222334622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9457c9e34186b%3A0x973f498fbf3cd113!2sCutie%20Salon%20%26%20Spa!5e0!3m2!1sja!2sus!4v1705363906527!5m2!1sja!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <img src="../images/salon.jpg" alt="exterior of the salon">
+          </div>
+-->
+        
+                    
         </main>
 
        <footer>
