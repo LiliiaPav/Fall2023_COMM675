@@ -648,24 +648,24 @@ footer a{
 
 
 /*---------------------------MEDIA CONTACT US-----------------------*/
-    body#strech{
-        min-height: 100%; 
-    }
     #contactUs{
-        height: 100%;
+        min-height: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 1fr;
         column-gap: var(--spacer-dbl);
-        padding-bottom: var(--spacer-thr);
+        padding: calc(var(--spacer-dbl)*2) 0 calc(var(--spacer-dbl)*5);
     }
     #contactUs::after{
         background-image: url(../images/contactDesktop.jpg);
     } 
     #contactUs h1{
+        --fs-h1: 4.8rem;
+        margin-bottom: calc(var(--spacer-dbl)*2);
         grid-column: 1/ span 2;
     }
     form#contactForm{
         width: 90%;
+        max-width: 375px;
         margin: 0;
         justify-self: end;
     }
@@ -754,7 +754,7 @@ footer a{
         }
     
     
-/*---------------------- MEDIA NAIL PAGE-------------------------*/
+/*-------------------- MEDIA 1000 NAIL PAGE-----------------------*/
     #manicures, #pedicures, #acrylics{
         max-width: 1200px;
         display: grid;
@@ -773,17 +773,12 @@ footer a{
     
 
     
-/*----------------- MEDIA CONTACT PAGE--------------------------*/
+/*---------------- MEDIA 1000 CONTACT PAGE ------------------------*/
     #contactUs{
         max-width: 1200px;
-        padding: calc(var(--spacer-dbl)*2) 0 calc(var(--spacer-dbl)*5);
-    }
-    #contactUs h1{
-        --fs-h1: 4.8rem;
-        margin-bottom: calc(var(--spacer-dbl)*2);
     }
     form#contactForm{
-        width: 64%;
+        width: 375px;
         justify-self: center;
     }
     div#mapWrapper{
