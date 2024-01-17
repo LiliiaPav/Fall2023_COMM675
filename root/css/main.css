@@ -199,7 +199,7 @@ main h1{
 
 
 /*---------------------------HAIR PAGE---------------------------*/
-#hair {
+#service {
     width: 90%;
     display: grid;
     grid-template-columns: auto;
@@ -207,30 +207,30 @@ main h1{
     margin-bottom: var(--spacer-thr);
 }
 
-#hair picture {
+#service picture {
     margin: 0 auto var(--spacer-thr);
 }
 
-#hair img{
+#service img{
     width: 100%;
 }
 
-#hair dt {
+#service dt {
     font-size: var(--fs-sub);
     font-weight: var(--fw-b);
     line-height: var(--line-h);
 }
 
-#hair dd {
+#service dd {
     font-size: var(--fs-p);
     line-height: var(--line-h);
     margin-bottom: 1.6rem;
 }
 
-/* RESPONSIVE HAIR SERVICES*/
+/* RESPONSIVE SERVICES*/
 
 @media screen and (min-width: 800px){
-    #hair {
+    #service {
         display: grid;
         grid-template-columns:  2fr 1fr;
         gap: 3rem;
@@ -238,20 +238,20 @@ main h1{
         width: 790px;
     }
 
-    #hair h1 {
+    #service h1 {
         grid-column: 1 / span 2;
         margin-bottom: var(--spacer-thr);
 }
-    #hair img {
+    #service img {
         width: 400px;
     }
-    #hair picture {
+    #service picture {
         order: 1;
         margin-top: 1rem;
     }
 }
 @media screen and (min-width: 1050px) {
-    #hair {
+    #service {
         display: grid;
         grid-template-columns:  2fr 1fr;
         gap: 3rem;
@@ -259,16 +259,16 @@ main h1{
         width: 1040px;
     }
 
-    #hair h1 {
+    #service h1 {
         grid-column: 1 / span 2;
         margin-bottom: var(--spacer-thr);
 }
     
-    #hair img {
+    #service img {
         width: 500px;
     }
 
-    #hair picture {
+    #service picture {
         order: 1;
         align-self: center;
     }
