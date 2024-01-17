@@ -300,6 +300,7 @@ main h1{
 }
 
 /*---------------------------CONTACT PAGE---------------------------*/
+
 ul.z-opacity{
     z-index: 10;
 }  
@@ -310,7 +311,7 @@ section#bookNow.noMargin{
    /*---local variable---*/
     --fw-submit: 400;
     width: 100%;
-    min-height:100%;
+    height:100%;
     position: relative;
     background-color: rgba(225,159,174,.3);
     z-index: 1;
@@ -329,7 +330,7 @@ section#bookNow.noMargin{
     left: 0;
     right: 0;
 */
-    background-image: url(../images/contactDesktop.jpg);
+    background-image: url(../images/contactMobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -646,13 +647,20 @@ footer a{
 }
 
 
-/*---------------------------MEDIA CONTACT US------------------------*/
+/*---------------------------MEDIA CONTACT US-----------------------*/
+    body#strech{
+        min-height: 100%; 
+    }
     #contactUs{
+        height: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 1fr;
         column-gap: var(--spacer-dbl);
         padding-bottom: var(--spacer-thr);
     }
+    #contactUs::after{
+        background-image: url(../images/contactDesktop.jpg);
+    } 
     #contactUs h1{
         grid-column: 1/ span 2;
     }
@@ -768,8 +776,7 @@ footer a{
 /*----------------- MEDIA CONTACT PAGE--------------------------*/
     #contactUs{
         max-width: 1200px;
-        min-height: 100%;
-        padding: calc(var(--spacer-dbl)*2) 0 calc(var(--spacer-thr)*3);
+        padding: calc(var(--spacer-dbl)*2) 0 calc(var(--spacer-dbl)*5);
     }
     #contactUs h1{
         --fs-h1: 4.8rem;
