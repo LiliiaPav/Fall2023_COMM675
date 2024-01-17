@@ -231,10 +231,23 @@ main h1{
 
 @media screen and (min-width: 800px){
     #hair {
+        display: grid;
+        grid-template-columns:  2fr 1fr;
+        gap: 3rem;
+        margin-bottom: calc(var(--spacer-dbl)*3);
         width: 790px;
     }
-    #hairColor, #haircuts img {
+
+    #hair h1 {
+        grid-column: 1 / span 2;
+        margin-bottom: var(--spacer-thr);
+}
+    #hair img {
         width: 400px;
+    }
+    #hair picture {
+        order: 1;
+        margin-top: 1rem;
     }
 }
 @media screen and (min-width: 1050px) {
