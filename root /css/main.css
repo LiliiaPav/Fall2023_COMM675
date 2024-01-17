@@ -300,9 +300,6 @@ main h1{
 }
 
 /*---------------------------CONTACT PAGE---------------------------*/
-body#strech{
-   
-}
 ul.z-opacity{
     z-index: 10;
 }  
@@ -368,13 +365,6 @@ form#contactForm{
     border: var(--form-border);
     border-radius: var(--border-radius);
 }
-
-/*
-#contactForm input:focus-visible {
-    outline: -webkit-focus-ring-color auto 1px;
-}
-*/
-
 #contactForm textarea{
     box-sizing: border-box;
     width: 100%;
@@ -426,16 +416,6 @@ div#mapWrapper img{
     z-index: 10;
     
 }
-
-
-
-
-
-
-
-
-
-
 
 /*---------------------------FOOTER---------------------------*/
 
@@ -789,11 +769,19 @@ footer a{
     #contactUs{
         max-width: 1200px;
         min-height: 100%;
-        padding: var(--spacer) 0 calc(var(--spacer-thr)*2);
+        padding: calc(var(--spacer-dbl)*2) 0 calc(var(--spacer-thr)*3);
     }
     #contactUs h1{
         --fs-h1: 4.8rem;
-        margin-bottom: var(--spacer-thr);
+        margin-bottom: calc(var(--spacer-dbl)*2);
+    }
+    form#contactForm{
+        width: 64%;
+        justify-self: center;
+    }
+    div#mapWrapper{
+        width: 84%;
+        justify-self: center;
     }
    
 }
