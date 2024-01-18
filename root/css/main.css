@@ -572,7 +572,7 @@ footer a{
 
     #service{
         display: grid;
-        grid-template-columns:  1fr 350px;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 1fr;
         column-gap: 3rem;
         margin-bottom: calc(var(--spacer-dbl)*3);
@@ -586,6 +586,9 @@ footer a{
         margin: 0;
         order: 1;
         align-self: start;
+    }
+    #service img{
+        min-width: 350px;
     }
     #service dd, #service dt{
         font-size: 1.8rem;
@@ -737,8 +740,6 @@ footer a{
     #service{
         max-width: 1200px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
         column-gap: 5rem;
     }
     #service h1{
