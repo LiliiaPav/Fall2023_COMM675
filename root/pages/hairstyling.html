@@ -15,7 +15,7 @@
     
     <body>
         <header>
-            <nav>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,7 +24,7 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
@@ -39,7 +39,7 @@
                        <ul>
                            <li><a href="hairColor.html">Coloring</a></li>
                            <li><a href="haircuts.html">Cuts</a></li>
-                           <li><a href="hairstyling.html">Styling</a></li>
+                           <li><a href="#">Styling</a></li>
                            <li><a href="hairTreatment.html">Treatments</a></li>
                        </ul>
 
@@ -55,32 +55,43 @@
                        </ul>
 
                     </li>
-                    <li  class="submenu current"><a href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-
        </header>
-       
-
-       
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
-       
-        <main id="contact-us">
+       <main id="service">
             
-          <h1>Contact us</h1>
-          
-          
-          
-          
-          
-          
-        </main>
+             <h1>Hair Styling</h1>
+               
+            <picture>
+                <source media="(min-width: 800px)" srcset="../images/updoDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/updoMobile.jpg" >
+                <img src="../images/updoDesktop.jpg" alt="woman with an updo hairstyle">
+            </picture>
 
-       <footer>
+         <dl>
+         <dt>Updo's - $55 & Up</dt>
+         <dd>Choose from our selection of updo hairstyles to elevate your look for any special occasion. Our expert stylists are dedicated to creating a stunning and personalized updo that complements your style and enhances your natural beauty.</dd>
+         
+         <dt>Blow Dry - $45</dt>
+         <dd>Experience the luxury of a professional blowout. Our stylists will skillfully blow-dry and style your hair, leaving you with a polished and salon-fresh finish</dd>
+         
+         <dt>Hair Braiding - $65 & Up</dt>
+         <dd>Choose from our diverse range of braided styles to elevate your look and express your unique style. Our skilled braiders are here to bring your braiding fantasies to life!</dd>
+         
+         <dt>Extensions - $125 & Up</dt>
+         <dd>Transform your look with extensions for added length and volume. Our stylists will seamlessly blend extensions for a natural and glamorous result.</dd>
+        </dl>
+         
+    </main> 
+      
+      
+              <footer>
             <section >
                 <h3>Contact us</h3>
                 <dl>
@@ -123,6 +134,7 @@
             </section>
         
     </footer>
-        
+         
+       
     </body>
 </html>

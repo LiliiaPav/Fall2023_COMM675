@@ -15,7 +15,7 @@
     
     <body>
         <header>
-            <nav>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,7 +24,7 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
@@ -37,17 +37,17 @@
                        <a href="#">Hair Services</a>
 
                        <ul>
-                           <li><a href="hairColor.html">Coloring</a></li>
+                           <li><a href="#">Coloring</a></li>
                            <li><a href="haircuts.html">Cuts</a></li>
                            <li><a href="hairstyling.html">Styling</a></li>
                            <li><a href="hairTreatment.html">Treatments</a></li>
                        </ul>
 
                     </li>
-                    <li><a href="wax.html">Waxing Services</a></li>
+                    <li><a href="pages/wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a href="pages/about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="faq.html">FAQ</a></li>
                            <li><a href="#">Reviews</a></li>
@@ -55,32 +55,44 @@
                        </ul>
 
                     </li>
-                    <li  class="submenu current"><a href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-
        </header>
-       
-
-       
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
-       
-        <main id="contact-us">
+      
+    <main id="service">
             
-          <h1>Contact us</h1>
-          
-          
-          
-          
-          
-          
-        </main>
+             <h1>Hair Coloring</h1>
+               
+            <picture>
+                <source media="(min-width: 800px)" srcset="../images/bobDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/bobMobile.jpg" >
+                <img src="../images/bobDesktop.jpg" alt="woman with honey blonde hair with highlights">
+            </picture>
 
-       <footer>
+         
+         <dl>
+         <dt>Full Color - $153</dt>
+         <dd>Our expert colorists are dedicated to creating stunning, long-lasting results that enhance your natural beauty. Choose from a spectrum of vibrant shades or opt for a subtle, natural change.</dd>
+         
+         <dt>Root Touch Up - $75</dt>
+         <dd>Perfect for those in-between moments when your regrowth starts to show, our skilled colorists will seamlessly blend and match your natural hair color, leaving you with a flawless finish.</dd>
+         
+         <dt>Highlights - $125</dt>
+         <dd>Illuminate your style with a transformative experience that will add dimension and radiance to your hair. Highlights are placed throughout your hair, creating a customized and vibrant look.</dd>
+
+         <dt>Color Toner/Gloss  - $65</dt>
+         <dd>Whether you're refreshing your current color or trying something new, our expert colorists will customize a toning treatment to enhance the vibrancy and longevity of your hair color.</dd>
+        </dl>
+          
+      </main> 
+      
+              <footer>
             <section >
                 <h3>Contact us</h3>
                 <dl>
@@ -123,6 +135,7 @@
             </section>
         
     </footer>
-        
+         
+       
     </body>
 </html>
