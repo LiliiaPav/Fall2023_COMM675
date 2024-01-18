@@ -227,59 +227,12 @@ main h1{
     margin-bottom: 1.6rem;
 }
 
-/* RESPONSIVE SERVICES*/
-
-@media screen and (min-width: 800px){
-    #service {
-        display: grid;
-        grid-template-columns:  2fr 1fr;
-        gap: 3rem;
-        margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 790px;
-    }
-
-    #service h1 {
-        grid-column: 1 / span 2;
-        margin: var(--spacer-thr);
-}
-    #service img {
-        width: 400px;
-    }
-    #service picture {
-        order: 1;
-        margin-top: 1rem;
-    }
-}
-@media screen and (min-width: 1050px) {
-    #service {
-        display: grid;
-        grid-template-columns:  2fr 1fr;
-        gap: 3rem;
-        margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 1040px;
-    }
-
-    #service h1 {
-        grid-column: 1 / span 2;
-        margin-bottom: var(--spacer-thr);
-}
-    
-    #service img {
-        width: 500px;
-    }
-
-    #service picture {
-        order: 1;
-        align-self: center;
-    }
-
-}
 /*---------------------------WAX PAGE---------------------------*/
 
 /*---------------------------ABOUT PAGE---------------------------*/
 
 #about{
-    margin-top: var(--spacer-thr);
+    margin-top: var(--spacer-dbl);
 }
 
 #about img{
@@ -542,8 +495,33 @@ footer a{
         width: 100%;
         margin: 0;
     }
-    
 
+
+/*---------------------------MEDIA SERVICE PAGE---------------------------*/ 
+
+    #service {
+        display: grid;
+        grid-template-columns:  2fr 1fr;
+        gap: 3rem;
+        margin-bottom: calc(var(--spacer-dbl)*3);
+        width: 790px;
+    }
+
+    #service h1 {
+        grid-column: 1 / span 2;
+        margin: var(--spacer-thr);
+}
+    #service img {
+        width: 400px;
+    }
+    #service picture {
+        order: 1;
+        margin-top: 1rem;
+    }
+/*---------------------------MEDIA ABOUT PAGE---------------------------*/    
+    #about{
+        margin-top: var(--spacer-thr);
+    }
 
 
 /*---------------------------MEDIA FAQ PAGE---------------------------*/
@@ -645,6 +623,30 @@ footer a{
 
     #bookNow{
         top: 50px; 
+        }
+
+/*---------------------------MEDIA SERVICES 1000px---------------------------*/
+    
+        #service {
+            display: grid;
+            grid-template-columns:  2fr 1fr;
+            gap: 3rem;
+            margin-bottom: calc(var(--spacer-dbl)*3);
+            width: 1040px;
+        }
+    
+        #service h1 {
+            grid-column: 1 / span 2;
+            margin-bottom: var(--spacer-thr);
+    }
+        
+        #service img {
+            width: 500px;
+        }
+    
+        #service picture {
+            order: 1;
+            align-self: center;
         }
 
 }
