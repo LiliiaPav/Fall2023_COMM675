@@ -8,14 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie-Contact us</title>
+        <title>Cutie-Pedicures</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
-        <header>
-            <nav>
+         <header>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -23,9 +23,9 @@
                     <i class="fa-solid fa-xmark menu closeBtn"></i>
                 </label>
                         
-                <ul class="navigation z-opacity">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="submenu z-opacity">
+                <ul class="navigation">
+                    <li><a class="current" href="../index.html">Home</a></li>
+                    <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
@@ -33,93 +33,66 @@
                            <li><a href="acrylics.html">Acrylics</a></li>
                        </ul>
                     </li>
-                    <li class="submenu z-opacity">
+                    <li class="submenu">
                        <a href="#">Hair Services</a>
 
                        <ul>
-                           <li><a href="#">Coloring</a></li>
-                           <li><a href="#">Cuts</a></li>
-                           <li><a href="#">Styling</a></li>
-                           <li><a href="#">Treatments</a></li>
+                           <li><a href="hairColor.html">Coloring</a></li>
+                           <li><a href="haircuts.html">Cuts</a></li>
+                           <li><a href="hairstyling.html">Styling</a></li>
+                           <li><a href="hairTreatment.html">Treatments</a></li>
                        </ul>
 
                     </li>
-                    
                     <li><a href="wax.html">Waxing Services</a></li>
 
-                    <li class="submenu z-opacity">
+                    <li class="submenu">
                        <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="faq.html">FAQ</a></li>
-                           <li><a href="#">Reviews</a></li>
+                           <li><a href="review.html">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
+
                     </li>
-                    <li class="submenu current "><a href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-
        </header>
-       
-<!--
-       <nav aria-label="Main">
-		<ul>
-				<li><a href="…">Home</a></li>
-				<li><a href="…">Shop</a></li>
-				<li class="has-submenu">
-						<a href="…" aria-expanded="false">
-							Space Bears
-						</a>
-						<ul>
-								<li><a href="…">Space Bear 6</a></li>
-								<li><a href="…">Space Bear 6 Plus</a></li>
-						</ul>
-				</li>
-				<li><a href="…">Mars Cars</a></li>
-				<li><a href="…">Contact</a></li>
-		</ul>
-</nav>
--->
 
-       
-
-        <section id="bookNow" class="noMargin">
+        <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="contactUs">
+        <main id="service">
             
-          <h1>Contact us</h1>
-          
-          <form action="mailto:name@gmail.com" method="post" id="contactForm">
-             
-              <label for="full-name"><span>Name</span></label>
-              <input type="text" id="full-name" name="full-name" value="" placeholder="" required autofocus>
-              
-              <label for="guestEmail"><span>Email</span></label>
-              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" required>
-              
-              <label for="subject"><span>Subject</span></label>
-              <input type="text" id="subject" name="subject" value="" placeholder="">
-              
-              <label for="message" id="yourMessage"><span>Your message</span></label>
-              <textarea name="message" id="message" placeholder=""></textarea>
-              
-              
-              <input type="submit" id="submitForm" value="Send Message">
-              
-           </form>
-          
-           <div id="mapWrapper">
+            <h1>Pedicures</h1>
             
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5809.644310727902!2d-116.98826777488179!3d32.63352222334622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9457c9e34186b%3A0x973f498fbf3cd113!2sCutie%20Salon%20%26%20Spa!5e0!3m2!1sja!2sus!4v1705363906527!5m2!1sja!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-             
-             <img src="../images/salon.jpg" alt="exterior of the salon">
-        
-           </div>
-        
-                    
+              <picture>
+                <source media="(min-width: 800px)" srcset="../images/pedicureDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/pedicureMobile.jpg" >
+                <img src="../images/pedicureDesktop.jpg" alt="showing off the colorful nails">
+            </picture>
+          
+            <dl>
+                <dt>Spa Pedicure - $28 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and polish.</dd>
+                <dt>Gel Pedicure - $35 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and gel pedicure.</dd>
+                <dt>French Pedicure - $33 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and French pedicure.</dd>
+                <dt>Paraffin Dip - $5 </dt>
+                <dd>A dip into our hot paraffin wax deeply moisturizes the skin and strengthens the nails.</dd>
+                <dt>Color Change  - $10 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your pedicure.</dd>
+                <dt>Color Change + gel - $25 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your gel pedicure.</dd>
+            </dl>
+          
+          
+          
+          
         </main>
 
        <footer>

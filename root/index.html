@@ -8,15 +8,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie-Manicures</title>
-        <link href="../css/reset.css" rel="stylesheet" type="text/css">
-        <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <title>Cutie</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header>
-           <nav>
-                <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
+             <nav>
+                <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
                     <i class="fa-solid fa-bars menu openBtn"></i>
@@ -24,79 +24,61 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="index.html">Home</a></li>
                     <li class="submenu">
-                       <a class="current"  href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
-                           <li><a class="current" href="manicures.html">Manicures</a></li>
-                           <li><a href="pedicures.html">Pedicures</a></li>
-                           <li><a href="acrylics.html">Acrylics</a></li>
+                           <li><a href="pages/manicures.html">Manicures</a></li>
+                           <li><a href="pages/pedicures.html">Pedicures</a></li>
+                           <li><a href="pages/acrylics.html">Acrylics</a></li>
                        </ul>
                     </li>
                     <li class="submenu">
                        <a href="#">Hair Services</a>
 
                        <ul>
-                           <li><a href="#">Coloring</a></li>
-                           <li><a href="#">Cuts</a></li>
-                           <li><a href="#">Styling</a></li>
-                           <li><a href="#">Treatments</a></li>
+                           <li><a href="pages/hairColor.html">Coloring</a></li>
+                           <li><a href="pages/haircuts.html">Cuts</a></li>
+                           <li><a href="pages/hairstyling.html">Styling</a></li>
+                           <li><a href="pages/hairTreatment.html">Treatments</a></li>
                        </ul>
 
                     </li>
-                    <li><a href="wax.html">Waxing Services</a></li>
+                    <li><a href="pages/wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a href="pages/about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
-                           <li><a href="faq.html">FAQ</a></li>
-                           <li><a href="#">Reviews</a></li>
-                           <li><a href="gallery.html">Gallery</a></li>
+                           <li><a href="pages/faq.html">FAQ</a></li>
+                           <li><a href="pages/review.html">Reviews</a></li>
+                           <li><a href="pages/gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="pages/contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-
-
        </header>
-
-
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="manicures">
-           
-           <h1>Manicures</h1>
-             
-           <picture>
-                <source media="(min-width: 800px)" srcset="../images/manicureDesktop.jpg">
-                <source media="(max-width: 799px)" srcset="../images/manicureMobile.jpg" >
-                <img src="../images/manicureDesktop.jpg" alt="showing off the colorful nails">
-            </picture>
+        <main id="home">
             
-            <dl>
-                <dt>Basic Manicure - $15 </dt>
-                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and polish.</dd>
-                <dt>French Manicure - $20 </dt>
-                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and French Nail.</dd>
-                <dt>Gel Manicure - $25 </dt>
-                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and Gel Manicure.</dd>
-                <dt>Gel French Manicure - $30 </dt>
-                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and Gel French Nail.</dd>
-                <dt>Manicure &amp; Buff - $20 </dt>
-                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, Buff, and polish.</dd>
-                <dt>Color Change only - $15 </dt>
-                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your nails.</dd>
-                <dt>Color Change + gel - $20 </dt>
-                <dd>This service includes  the removal of the filing, cuticles and then redo your gel nails.</dd>
-            </dl>
-          
-          
+           <img class="hide" src="images/nailsHomeDesktop.jpg" alt="">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/homePageDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="images/homePageMobile.jpg" >
+                <img src="images/homePageDesktop.jpg" alt="girl with a flower">
+            </picture>
+
+            <img class="hide" src="images/waxpotHomeDesktop.jpg" alt="">
+
+            <h1>Be Our Guest</h1>
+
+            <p>Welcome to Cutie Salon and Spa where beauty meets charm! We believe in offering amazing service with beautiful results which helps to keep our clients loyal and happy. Come and experience our salon for yourself!</p>
         </main>
 
        <footer>

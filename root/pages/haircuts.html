@@ -9,14 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <title>Cutie</title>
-        <link href="css/reset.css" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header>
              <nav>
-                <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
+                <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
                     <i class="fa-solid fa-bars menu openBtn"></i>
@@ -24,38 +24,38 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
-                           <li><a href="pages/manicures.html">Manicures</a></li>
-                           <li><a href="pages/pedicures.html">Pedicures</a></li>
-                           <li><a href="pages/acrylics.html">Acrylics</a></li>
+                           <li><a href="manicures.html">Manicures</a></li>
+                           <li><a href="pedicures.html">Pedicures</a></li>
+                           <li><a href="acrylics.html">Acrylics</a></li>
                        </ul>
                     </li>
                     <li class="submenu">
                        <a href="#">Hair Services</a>
 
                        <ul>
-                           <li><a href="#">Coloring</a></li>
-                           <li><a href="#">Cuts</a></li>
-                           <li><a href="#">Styling</a></li>
-                           <li><a href="#">Treatments</a></li>
+                           <li><a href="hairColor.html">Coloring</a></li>
+                           <li><a href="review.html">Cuts</a></li>
+                           <li><a href="hairstyling.html">Styling</a></li>
+                           <li><a href="hairTreatment.html">Treatments</a></li>
                        </ul>
 
                     </li>
-                    <li><a href="pages/wax.html">Waxing Services</a></li>
+                    <li><a href="wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a href="pages/about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
-                           <li><a href="pages/faq.html">FAQ</a></li>
-                           <li><a href="#">Reviews</a></li>
-                           <li><a href="pages/gallery.html">Gallery</a></li>
+                           <li><a href="faq.html">FAQ</a></li>
+                           <li><a href="review.html">Reviews</a></li>
+                           <li><a href="gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="pages/contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -64,24 +64,35 @@
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
-       
-        <main id="home">
-            
-           <img class="hide" src="images/nailsHomeDesktop.jpg" alt="">
+      
+        <main id="service">
+          
+         <h1>Hair Cuts</h1>
+               
             <picture>
-                <source media="(min-width: 800px)" srcset="images/homePageDesktop.jpg">
-                <source media="(max-width: 799px)" srcset="images/homePageMobile.jpg" >
-                <img src="images/homePageDesktop.jpg" alt="girl with a flower">
+                <source media="(min-width: 800px)" srcset="../images/pixieDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/pixieMobile.jpg" >
+                <img src="../images/pixieDesktop.jpg" alt="woman with a pixie bob haircut">
             </picture>
 
-            <img class="hide" src="images/waxpotHomeDesktop.jpg" alt="">
-
-            <h1>Be Our Guest</h1>
-
-            <p>Welcome to Cutie Salon and Spa where beauty meets charm! We believe in offering amazing service with beautiful results which helps to keep our clients loyal and happy. Come and experience our salon for yourself!</p>
-        </main>
-
-       <footer>
+         
+         <dl>
+         <dt>Women Hair Cuts- $75</dt>
+         <dd>Timeless and elegant, our classic cut is perfect for those who appreciate simplicity and sophistication. Our stylists will create a versatile look that complements your features.</dd>
+         
+         <dt>Men Hair Cuts- $45</dt>
+         <dd>Choose the haircut and grooming services that best reflect your style and personality. Our experienced barbers are dedicated to delivering the highest quality service for a look that suits you perfectly.</dd>
+         
+         <dt>Children Hair Cuts- $30</dt>
+         <dd>Make your child's haircut experience enjoyable and stress-free with our expert stylists who specialize in creating kid-friendly and imaginative hairstyles!</dd>
+         
+         <dt>Bang Trim - $35</dt>
+         <dd>Frame your face with chic bangs. Whether you prefer blunt, side-swept, or curtain bangs, we will tailor the look to enhance your features and express your individuality.</dd>
+         </dl>
+          
+      </main>   
+      
+              <footer>
             <section >
                 <h3>Contact us</h3>
                 <dl>
@@ -124,6 +135,7 @@
             </section>
         
     </footer>
-        
+         
+       
     </body>
 </html>

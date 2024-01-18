@@ -186,27 +186,28 @@ main h1{
 }
 
 /*---------------------------NAIL MANICURE PAGE---------------------------*/
-#manicures, #pedicures, #acrylics{
+#service{
     width: 90%;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     margin-bottom: var(--spacer-thr);
 }
-#manicures picture, #pedicures picture, #acrylics picture{
+#service picture{
     margin: 0 auto var(--spacer-thr);
 }
-#manicures img, #pedicures img, #acrylics img{
+#service img{
     width: 100%;
+    margin: auto;
 }
 
-#manicures dt, #pedicures dt, #acrylics dt{
+#service dt{
     font-size: var(--fs-p);
     font-weight: var(--fw-b);
     line-height: var(--line-h);
 }
 
-#manicures dd, #pedicures dd, #acrylics dd{
+#service dd{
     font-size: var(--fs-p);
     line-height: var(--line-h);
     margin-bottom: 1.6rem;
@@ -301,9 +302,6 @@ main h1{
 
 /*---------------------------CONTACT PAGE---------------------------*/
 
-ul.z-opacity{
-    z-index: 10;
-}  
 section#bookNow.noMargin{
     margin-bottom: 0;
 }
@@ -312,29 +310,13 @@ section#bookNow.noMargin{
     --fw-submit: 400;
     width: 100%;
     height:100%;
-    position: relative;
-    background-color: rgba(225,159,174,.3);
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-}
-#contactUs::after{
-    content: "";
-    position: absolute;
-    z-index: -10;
-    inset: 0;
-/*
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-*/
     background-image: url(../images/contactMobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: .2;     
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
 }
 form#contactForm{
     width: 90%;
@@ -384,6 +366,7 @@ label#yourMessage span{
 
 input#submitForm{
     width: 57%;
+    min-width: 152px;
     padding: 0;
     font: var(--fw-submit) 2.4rem var(--headline-font);
     color: #fff;
@@ -391,7 +374,7 @@ input#submitForm{
     cursor: pointer;
 }
 
-div#mapWrapper{
+section#mapWrapper{
     position: relative;
     width: 90%;
     padding-bottom: 57%;
@@ -400,7 +383,7 @@ div#mapWrapper{
     margin: var(--spacer-dbl) auto var(--spacer-thr);
 }
 
-div#mapWrapper iframe{
+section#mapWrapper iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -408,14 +391,13 @@ div#mapWrapper iframe{
     height: 100%; 
     z-index: 1;
 }
-div#mapWrapper img{
+section#mapWrapper img{
     width: auto;
     height: 30%;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 5px;
     z-index: 10;
-    
 }
 
 /*---------------------------FOOTER---------------------------*/
@@ -588,30 +570,24 @@ footer a{
     
 /*---------------------------MEDIA NAIL PAGE---------------------------*/
 
-    #manicures, #pedicures, #acrylics{
+    #service{
         display: grid;
-        grid-template-columns:  1.5fr 1fr;
+        grid-template-columns:  1fr 350px;
         grid-template-rows: auto 1fr;
         column-gap: 3rem;
         margin-bottom: calc(var(--spacer-dbl)*3);
     }
-    #manicures h1, #pedicures h1 , #acrylics h1{
+    #service h1{
         grid-column: 1 / span 2;
         margin-bottom: var(--spacer-thr);
     }
 
-   #manicures picture, #pedicures picture, #acrylics picture{
+   #service picture{
         margin: 0;
         order: 1;
-        align-self: center;
-      
+        align-self: start;
     }
-    #manicures img, pedicures img acrylics img{
-        max-height: 680px;
-        object-fit: cover;
-    }
-
-     #manicures dd,#pedicures dd,#acrylicss dd,#manicures dt, #pedicures dt, #acrylics dt{
+    #service dd, #service dt{
         font-size: 1.8rem;
     }
     
@@ -659,7 +635,6 @@ footer a{
         background-image: url(../images/contactDesktop.jpg);
     } 
     #contactUs h1{
-        --fs-h1: 4.8rem;
         margin-bottom: calc(var(--spacer-dbl)*2);
         grid-column: 1/ span 2;
     }
@@ -672,13 +647,17 @@ footer a{
     input#submitForm{
         margin-bottom: 0;
     }
-    div#mapWrapper{
+    section#mapWrapper{
         margin: 0;
         height: 100%;
     }
-    div#mapWrapper ifram{
+    section#mapWrapper ifram{
         height: 100%;
         width: auto;
+    }
+    section#mapWrapper img{
+        width: 35%;
+        height: auto;
     }
    
 
@@ -755,21 +734,29 @@ footer a{
     
     
 /*-------------------- MEDIA 1000 NAIL PAGE-----------------------*/
-    #manicures, #pedicures, #acrylics{
+    #service{
         max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 1fr;
+        grid-template-rows: repeat(2, auto);
         column-gap: 5rem;
     }
-    #manicures h1, #pedicures h1, #acrylics h1{
+    #service h1{
         grid-column: 1 / span 2;
-        --fs-h1:4.8rem;
     }
-    #manicures dl, #pedicures dl, #acrylics dl{
+    #service dl{
         grid-column: 1 /  2;
-        min-width: 500px;
+        max-width: 500px;
+        justify-self: center;
     }
+    #service picture{
+        justify-self: stretch;
+    }
+    #service img{
+        min-width: 450px;
+        max-height: 720px;
+    }
+    
     
 
     
@@ -781,7 +768,7 @@ footer a{
         width: 375px;
         justify-self: center;
     }
-    div#mapWrapper{
+    section#mapWrapper{
         width: 84%;
         justify-self: center;
     }

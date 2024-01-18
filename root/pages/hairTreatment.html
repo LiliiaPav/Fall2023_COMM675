@@ -15,7 +15,7 @@
     
     <body>
         <header>
-            <nav>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,7 +24,7 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
@@ -37,20 +37,20 @@
                        <a href="#">Hair Services</a>
 
                        <ul>
-                           <li><a href="#">Coloring</a></li>
-                           <li><a href="#">Cuts</a></li>
-                           <li><a href="#">Styling</a></li>
+                           <li><a href="hairColor.html">Coloring</a></li>
+                           <li><a href="haircuts.html">Cuts</a></li>
+                           <li><a href="hairstyling.html">Styling</a></li>
                            <li><a href="#">Treatments</a></li>
                        </ul>
 
                     </li>
-                    <li><a class="current" href="wax.html">Waxing Services</a></li>
+                    <li><a href="wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
                        <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="faq.html">FAQ</a></li>
-                           <li><a href="#">Reviews</a></li>
+                           <li><a href="review.html">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
 
@@ -59,23 +59,35 @@
                 </ul>
             </nav>
 
-
-
        </header>
 
-       
-       <section id="bookNow">
+        <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
-       
-        <main id="contact">
+       <main id="service">
             
-            <h1>Be Our Guest</h1>
+             <h1>Hair Treatments</h1>
+               
+            <picture>
+                <source media="(min-width: 800px)" srcset="../images/keratinDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/keratinMobile.jpg" >
+                <img src="../images/keratinDesktop.jpg" alt="woman with straight hair">
+            </picture>
 
-            <p>Welcome to Cutie Salon and Spa where beauty meets charm! We believe in offering amazing service with beautiful results which helps to keep our clients loyal and happy. Come and experience our salon for yourself!</p>
-        </main>
-
-       <footer>
+         <dl>
+         <dt>Brazilian (Keratin) - $300</dt>
+         <dd>Our Keratin Smoothing Treatment, designed to transform and rejuvenate your hair. This revolutionary treatment is a game-changer for those seeking frizz-free, sleek, and manageable locks.</dd>
+         
+         <dt>Deep Conditioning - $35</dt>
+         <dd>Rejuvenate your hair and give it the care it deserves with our Deep Conditioning Treatment. Designed to revive and restore, this luxurious treatment is the perfect solution for dry, damaged, or over-processed hair. </dd>
+         
+         <dt>Perm - $65</dt>
+         <dd>Transform your hair with the magic of curls. Whether you're looking to add texture, bounce, or redefine your natural curls, our perm service offers a customized and stunning solution.</dd>
+        </dl>
+         
+    </main>  
+      
+              <footer>
             <section >
                 <h3>Contact us</h3>
                 <dl>
@@ -118,6 +130,7 @@
             </section>
         
     </footer>
-        
+         
+       
     </body>
 </html>
