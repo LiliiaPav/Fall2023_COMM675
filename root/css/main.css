@@ -192,7 +192,6 @@
     }
     /*---------------------------NAIL MANICURE PAGE---------------------------*/
     
-
     /*---------------------------NAIL PEDICURE PAGE---------------------------*/
     
     
@@ -233,9 +232,10 @@
     @media screen and (min-width: 800px){
         #service {
             display: grid;
-            grid-template-columns:  1fr 1fr;
+            grid-template-columns:  2fr 1fr;
             gap: 3rem;
             margin-bottom: calc(var(--spacer-dbl)*3);
+            width: 790px;
         }
     
         #service h1 {
@@ -243,8 +243,7 @@
             margin: var(--spacer-thr);
     }
         #service img {
-            width: 100%;
-            max-width: 400px;
+            width: 400px;
         }
         #service picture {
             order: 1;
@@ -257,6 +256,7 @@
             grid-template-columns:  2fr 1fr;
             gap: 3rem;
             margin-bottom: calc(var(--spacer-dbl)*3);
+            width: 1040px;
         }
     
         #service h1 {
@@ -265,7 +265,7 @@
     }
         
         #service img {
-            max-width: 500px;
+            width: 500px;
         }
     
         #service picture {
