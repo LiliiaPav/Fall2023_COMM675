@@ -235,7 +235,7 @@ main h1{
         grid-template-columns:  2fr 1fr;
         gap: 3rem;
         margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 790px;
+        max-width: 790px;
     }
 
     #service h1 {
@@ -256,7 +256,7 @@ main h1{
         grid-template-columns:  2fr 1fr;
         gap: 3rem;
         margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 1040px;
+        max-width: 1040px;
     }
 
     #service h1 {
