@@ -1,688 +1,256 @@
 /*---------Global variables-----------*/
 :root{
-/*---------typography-----------*/
---primary-font: 'Montserrat', sans-serif;
---headline-font: 'Leckerli One', cursive;
---fw-l:100;
---fw-b:600;
---fs-base: 10px;
---fs-h1: 3.6rem;
---fs-sub: 1.8rem;
---fs-p: 1.6rem;
---line-h: 1.5;
-
-/*---------colors-----------*/
---primary-color:  #F14F74;
---secondary-color: #E19FAE;
---tetriary-color: #DB2B41;
-/*--neutral-lt-color: #F2E2D9;*/
---neutral-lt-color: white;
---accent-color: #BDB0D9;
-
-/*---------helper-----------*/
---spacer: 1rem;
---spacer-dbl: 2rem;
---spacer-thr: 3rem;
---border-radius: 6px;
---shadow: 1px 1px 3px #D9C2BA;
---inner-shadow: 3px 3px 3px rgba(255,255,255,0.2), 0 0 var(--tetriary-color);
---border: solid 15px var(--primary-color);
-}
-
-
-/*---------general-----------*/
-html { 
-    font-size: var(--fs-base);
-    min-width: 100%;
-}
-
-body {
-    font-family: var(--primary-font);
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*---------------------------Navigation START---------------------------*/
-.logo {
-    width: 30%;
-    height: auto;
-}
-
-.menu {
-    font-size: var(--fs-h1);
-    color: var(--neutral-lt-color);
-    align-self: center;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-nav ul{ width: 100%;}
-
-.current{ text-shadow: 3px 3px 2px rgba(0,0,0,.6);}
-
-nav ul li{
-padding: 1rem;
-border-bottom: solid var(--primary-color) 1px;
-}
-
-ul li.logo{ margin-right: auto;}
-
-nav li a {
-    font-size: var(--fs-p);
-    text-decoration: none;
-    display: block;
-}
-
-nav ul a:link, nav ul a:visited{
-    font-size: var(--fs-p);
-    color: var(--neutral-lt-color);
-}
-
-nav ul a:hover{ color: var(--neutral-lt-color); }
-
-nav ul a:active{ color: var(--tetriary-color); }
-
-.navigation{
-    position:absolute;
-    top:100%;
-    background-color: var(--secondary-color);
-    display: none;
-}
-
-.navToggler:checked ~ .navigation{ display: block;}
-
-.closeBtn{display: none;}
-.navToggler{display: none;}
-.navToggler:checked ~ .navTogglerMenu .closeBtn{display: block;}
-.navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
- li.submenu>ul { display: none; }
- li.submenu:hover ul { 
-    background-color: var(--primary-color);
-    display: block;
-    width: auto;
-}
-
-li.submenu:active ul { 
-    display: block;
-}
-
-.submenu ul li{
-    border: 1px solid var(--secondary-color);
-}
-
-
-/*---------------------------Navigation ENDS---------------------------*/
-
-
-header{
-    background-color: var(--secondary-color);
-    border-bottom: var(--border);
-    text-align: center;
-    padding: var(--spacer);
-    width: 100%;
-}
-
-#bookNow{
-    border-bottom: var(--border);
-    display: flex;
-    justify-content: center;
-    padding: var(--spacer-dbl);
-    margin-bottom: var(--spacer-dbl);
-    width: 100%;
-}
-
-#bookNow .button{
-    background-color: var(--primary-color);
-    padding: var(--spacer);
-    border: none;
-    color: var(--neutral-lt-color);
-    font-size: 2rem;
-    font-family: var(--primary-font);
-    text-decoration: none;
-}
-#bookNow .button i{
-    margin-right: var(--spacer);
-}
-
-main h1, legend{
-    font: var(--fs-h1) var(--headline-font);
-    margin: var(--spacer-dbl) var(--spacer) var(--spacer);
-    color: transparent;
-    text-shadow: var(--inner-shadow);
-    text-align: center;
-}
-
-/*---------------------------HOME PAGE---------------------------*/
-
-#home, #about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin-bottom: var(--spacer-dbl);
-}
-
-#home p, #about p, .review-label {
-    width: 60%;
-    text-align: center;
-    line-height: 1.5;
-    font-size: var(--fs-p);
-}
-
-#home img{
-    width: 100%;
-}
-
-.hide{
-    display: none;
-}
-
-@media screen and (min-width: 400px){
-.logo {
-    width: 20%;
-}
-}
-/*---------------------------NAIL MANICURE PAGE---------------------------*/
-
-/*---------------------------NAIL PEDICURE PAGE---------------------------*/
-
-
-/*---------------------------NAIL ACRILIC PAGE---------------------------*/
-
-
-/*---------------------------HAIR PAGE---------------------------*/
-#service {
-    width: 90%;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    margin-bottom: var(--spacer-thr);
-}
-
-#service picture {
-    margin: 0 auto var(--spacer-thr);
-}
-
-#service img{
-    width: 100%;
-}
-
-#service dt {
-    font-size: var(--fs-sub);
-    font-weight: var(--fw-b);
-    line-height: var(--line-h);
-}
-
-#service dd {
-    font-size: var(--fs-p);
-    line-height: var(--line-h);
-    margin-bottom: 1.6rem;
-}
-
-/*---------------------------WAX PAGE---------------------------*/
-
-/*---------------------------ABOUT PAGE---------------------------*/
-
-#about{
-    margin-top: var(--spacer-dbl);
-}
-
-#about img{
-    width: 100%;
-}
-
-/*---------------------------FAQ PAGE---------------------------*/
-
-#faq article{
-    margin: var(--spacer-thr) auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--spacer-thr);
-    width: 80%;
-    line-height: 1.5;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-#faq > *{
-    text-align: center;
-}
-
-#faq h2{
-    margin-top: var(--spacer-dbl);
-    font-size: var(--fs-p);
-    font-weight: var(--fw-b);
-}
-
-#faq p{
-    font-size: var(--fs-p);
-    margin-bottom: var(--spacer-dbl);
-}
-
-#faq section li{
-    font-size: var(--fs-p);
-    text-align: left;
-    margin-bottom: var(--spacer);
-}
-
-#faq section i{
-    font-size: var(--fs-p);
-    margin-right: var(--spacer);
-}
-
-
-/*---------------------------REVIEW PAGE---------------------------*/
-
-.review-rate{
-    font-size: var(--fs-p);
-    line-height: var(--line-h);
-    margin-bottom: 1.6rem;
-}
-
-
-.review-box {
-    padding: 25px;
-    font-family: montserrat;
-     letter-spacing: 2px;}
-
-.review-comment-left, .review-comment-right {
-  float: left;
-  width: 20%;
-  font-size: 1.2em;
-  background-color: var(--secondary-color);
-  color: var(--neutral-lt-color);
-  padding: 25px;
-  height: auto;}
-
-.review-comment-mid {
-  float: left;
-  width: 60%;
-  font-size: 1em;
-  color: var(--primary-color);
-  padding: 25px;
-
-}
-
-.customers-names {
-    font-size: 1.5em;
-    font-family:inherit;
-    font-style: italic;
-    font-weight: bolder;
-    letter-spacing: 2px;}
-
-form {
-    margin-top: 30px;}
-
-.review-img {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-  .review-comment-left, .review-comment-right, .review-comment-mid, .review-img  {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-
-/*---------------------------GALLERY PAGE---------------------------*/
-#gallery{
-    display: grid;
-    gap: var(--spacer);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    margin: var(--spacer-thr);
-}
-
-#gallery img{
-    width: 100%;
-    height: 100%;
-}
-
-#gallery h1, #gallery section{ 
-    grid-column: 1 / span 2; 
-    text-align: center;
-}
-
-#gallery .moveIt{
-    order: 2;
-}
-
-#gallery .slide{
-    display: none;
-}
-
-/*---------------------------CONTACT PAGE---------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------FOOTER---------------------------*/
-
-footer{
-    background-color: var(--secondary-color);
-    border-top: var(--border);
-    padding: var(--spacer) var(--spacer);
-    width: 100%;
-    margin-top: auto;
-    color: var(--neutral-lt-color);
-    display: grid;
-    gap: var(--spacer);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr auto;
-    line-height: var(--line-h);
-    font-size: 1.2rem;
-    justify-items: center;
-    font-style: italic;
-}
-
-footer #social{ 
-    grid-column: 1 / span 2; 
-    text-align: center;
-}
-
-#social p{
-    margin-top: var(--spacer);
-    font-style:normal;
-}
-
-footer i{
-    color: var(--neutral-lt-color);
-    margin: 0 var(--spacer);
-    font-size: 2.5rem;
-}
-
-footer h3{
-    font-weight: var(--fw-b);
-    margin-bottom: var(--spacer);
-    font-style: italic;
-    font-size: var(--fs-p);
-}
-
-footer dd{
-    margin-left: var(--spacer-dbl);
-}
-
-footer dt{
-    font-weight: var(--fw-b);
-}
-
-footer a{
-    color: var(--neutral-lt-color);
-    text-decoration: none;
-}
-
-
-
-
-
-/*---------------------------MEDIA---------------------------*/
-@media screen and (min-width: 800px) {
-
-/*---------------------------MEDIA NAV---------------------------*/
-    .navTogglerMenu{
-        display: none;
+    /*---------typography-----------*/
+    --primary-font: 'Montserrat', sans-serif;
+    --headline-font: 'Leckerli One', cursive;
+    --fw-l:100;
+    --fw-b:600;
+    --fs-base: 10px;
+    --fs-h1: 3.6rem;
+    --fs-sub: 1.8rem;
+    --fs-p: 1.6rem;
+    --line-h: 1.5;
+    
+    /*---------colors-----------*/
+    --primary-color:  #F14F74;
+    --secondary-color: #E19FAE;
+    --tetriary-color: #DB2B41;
+    /*--neutral-lt-color: #F2E2D9;*/
+    --neutral-lt-color: white;
+    --accent-color: #BDB0D9;
+    
+    /*---------helper-----------*/
+    --spacer: 1rem;
+    --spacer-dbl: 2rem;
+    --spacer-thr: 3rem;
+    --border-radius: 6px;
+    --shadow: 1px 1px 3px #D9C2BA;
+    --inner-shadow: 3px 3px 3px rgba(255,255,255,0.2), 0 0 var(--tetriary-color);
+    --border: solid 15px var(--primary-color);
     }
-
-    nav{
+    
+    
+    /*---------general-----------*/
+    html { 
+        font-size: var(--fs-base);
+        min-width: 100%;
+    }
+    
+    body {
+        font-family: var(--primary-font);
+        margin: auto;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        gap: var(--spacer);
-    }
-
-    nav ul{
-        display: flex;}
-
-    .navigation{
-        all: unset;
-    }
-
-    .navigation{
-        display: flex ;
-        margin-left: auto;
-        list-style-type: none;
         align-items: center;
-        padding: 0;  
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
     }
-
-    .navigation li{
-        border-bottom: none;
+    
+    /*---------------------------Navigation START---------------------------*/
+    .logo {
+        width: 30%;
+        height: auto;
     }
-    li.submenu{
+    
+    .menu {
+        font-size: var(--fs-h1);
+        color: var(--neutral-lt-color);
+        align-self: center;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: relative;
     }
+    
+    nav ul{ width: 100%;}
+    
+    .current{ text-shadow: 3px 3px 2px rgba(0,0,0,.6);}
+    
+    nav ul li{
+    padding: 1rem;
+    border-bottom: solid var(--primary-color) 1px;
+    }
+    
+    ul li.logo{ margin-right: auto;}
+    
+    nav li a {
+        font-size: var(--fs-p);
+        text-decoration: none;
+        display: block;
+    }
+    
     nav ul a:link, nav ul a:visited{
         font-size: var(--fs-p);
+        color: var(--neutral-lt-color);
     }
-    li.submenu>ul { 
+    
+    nav ul a:hover{ color: var(--neutral-lt-color); }
+    
+    nav ul a:active{ color: var(--tetriary-color); }
+    
+    .navigation{
+        position:absolute;
+        top:100%;
+        background-color: var(--secondary-color);
         display: none;
-        position: absolute;
     }
-    nav > ul li:hover ul { 
+    
+    .navToggler:checked ~ .navigation{ display: block;}
+    
+    .closeBtn{display: none;}
+    .navToggler{display: none;}
+    .navToggler:checked ~ .navTogglerMenu .closeBtn{display: block;}
+    .navToggler:checked ~ .navTogglerMenu .openBtn{display: none;}
+     li.submenu>ul { display: none; }
+     li.submenu:hover ul { 
+        background-color: var(--primary-color);
         display: block;
-        background-color: grey;
         width: auto;
-}
-    .logo {
-        width: 10%;
-        height: auto;
-        max-height: 125px;
-        max-width: 125px;
     }
-
-/*---------------------------MEDIA BOOK NOW---------------------------*/
-    #bookNow{
-        border: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 30px; 
-        max-width: 154px;
-        right: 100px;
-    }
-
-/*---------------------------MEDIA HOME---------------------------*/
-
-    .hide{
+    
+    li.submenu:active ul { 
         display: block;
     }
-
-    #home{
-        display: grid;
-        gap: var(--spacer);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr auto auto;
-        justify-items: center;
+    
+    .submenu ul li{
+        border: 1px solid var(--secondary-color);
+    }
+    
+    
+    /*---------------------------Navigation ENDS---------------------------*/
+    
+    
+    header{
+        background-color: var(--secondary-color);
+        border-bottom: var(--border);
+        text-align: center;
+        padding: var(--spacer);
+        width: 100%;
+    }
+    
+    #bookNow{
+        border-bottom: var(--border);
+        display: flex;
+        justify-content: center;
+        padding: var(--spacer-dbl);
+        margin-bottom: var(--spacer-dbl);
+        width: 100%;
+    }
+    
+    #bookNow .button{
+        background-color: var(--primary-color);
+        padding: var(--spacer);
+        border: none;
+        color: var(--neutral-lt-color);
+        font-size: 2rem;
+        font-family: var(--primary-font);
+        text-decoration: none;
+    }
+    #bookNow .button i{
+        margin-right: var(--spacer);
+    }
+    
+    main h1{
+        font: var(--fs-h1) var(--headline-font);
+        margin: var(--spacer-dbl) var(--spacer) var(--spacer);
+        color: transparent;
+        text-shadow: var(--inner-shadow);
+        text-align: center;
+    }
+    
+    /*---------------------------HOME PAGE---------------------------*/
+    
+    #home, #about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 90%;
-        margin: var(--spacer) auto var(--spacer-thr);
-        align-content: center;
-        max-width: 1200px;
+        margin-bottom: var(--spacer-dbl);
     }
-
-    #home h1{
-        --fs-h1: 4.8rem;
-        grid-column: 1 / span 3; 
-    }
-
-    #home p{
+    
+    #home p, #about p{
         width: 60%;
         text-align: center;
-        line-height: var(--line-h);
-        --fs-p: 2.4rem;
-        grid-column: 1 / span 3; 
+        line-height: 1.5;
+        font-size: var(--fs-p);
     }
-
+    
     #home img{
         width: 100%;
-        height: 100%;
     }
-
-    #home picture img{
-        width: 100%;
-        margin: 0;
-    }
-
-
-/*---------------------------MEDIA SERVICE PAGE---------------------------*/ 
-
-    #service {
-        display: grid;
-        grid-template-columns:  2fr 1fr;
-        gap: 3rem;
-        margin-bottom: calc(var(--spacer-dbl)*3);
-        width: 790px;
-    }
-
-    #service h1 {
-        grid-column: 1 / span 2;
-        margin: var(--spacer-thr);
-}
-    #service img {
-        width: 400px;
-    }
-    #service picture {
-        order: 1;
-        margin-top: 1rem;
-    }
-/*---------------------------MEDIA ABOUT PAGE---------------------------*/    
-    #about{
-        margin-top: var(--spacer-thr);
-    }
-
-
-/*---------------------------MEDIA FAQ PAGE---------------------------*/
-    #faq section ul{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-
-
-/*---------------------------MEDIA GALLERY PAGE---------------------------*/
-
-#gallery{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr 1fr;
-    margin: var(--spacer-thr);
-}
-
-#gallery h1{ 
-    grid-column: 1 / span 4; 
-}
-
-#gallery section{ 
-    grid-column: 2 / span 2; 
-}
-
-#gallery .moveIt{
-    order: 0;
-}
-
-
-
-/*---------------------------MEDIA FOOTER---------------------------*/
-
-    footer{
-        display: grid;
-        gap: var(--spacer-dbl);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        line-height: var(--line-h);
-        font-size: 1.6rem;
-        justify-items: center;
-        align-items: center;
-        padding: var(--spacer-dbl) var(--spacer-dbl);
-    }
-
-    footer br{
+    
+    .hide{
         display: none;
     }
-
-    footer h3{
-        font-size: 2.4rem;
-    }
-
-    footer #social{  grid-column: 2 ;  }
-
-    #hours{
-        order:3;
-    }
-
-    #hours dl{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    footer section:first-of-type dl{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr auto;
-        max-width: 350px;
-        
-    }
-
-    footer dd, footer dt{
-        margin: 0;
-    }
-
-}
-
-/*---------------------------MEDIA 1000px---------------------------*/
-
-@media screen and (min-width: 1000px) {
-
-    nav ul a:link, nav ul a:visited{
-        font-size: 2.2rem;
-    }
-
-    header{
-        max-height: 220px;
-    }
-
-    nav{
-        max-height: 220px;
-    }
-
-    #bookNow{
-        top: 50px; 
-        }
-
-/*---------------------------MEDIA SERVICES 1000px---------------------------*/
     
+    @media screen and (min-width: 400px){
+    .logo {
+        width: 20%;
+    }
+    }
+    /*---------------------------NAIL MANICURE PAGE---------------------------*/
+    
+    /*---------------------------NAIL PEDICURE PAGE---------------------------*/
+    
+    
+    /*---------------------------NAIL ACRILIC PAGE---------------------------*/
+    
+    
+    /*---------------------------HAIR PAGE---------------------------*/
+    #service {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-bottom: var(--spacer-thr);
+    }
+    
+    #service picture {
+        margin: 0 auto var(--spacer-thr);
+    }
+    
+    #service img{
+        width: 100%;
+    }
+    
+    #service dt {
+        font-size: var(--fs-sub);
+        font-weight: var(--fw-b);
+        line-height: var(--line-h);
+    }
+    
+    #service dd {
+        font-size: var(--fs-p);
+        line-height: var(--line-h);
+        margin-bottom: 1.6rem;
+    }
+    
+    /* RESPONSIVE SERVICES*/
+    
+    @media screen and (min-width: 800px){
+        #service {
+            display: grid;
+            grid-template-columns:  2fr 1fr;
+            gap: 3rem;
+            margin-bottom: calc(var(--spacer-dbl)*3);
+            width: 790px;
+        }
+    
+        #service h1 {
+            grid-column: 1 / span 2;
+            margin: var(--spacer-thr);
+    }
+        #service img {
+            width: 400px;
+        }
+        #service picture {
+            order: 1;
+            margin-top: 1rem;
+        }
+    }
+    @media screen and (min-width: 1050px) {
         #service {
             display: grid;
             grid-template-columns:  2fr 1fr;
@@ -704,7 +272,382 @@ footer a{
             order: 1;
             align-self: center;
         }
-
-}
-
-
+    
+    }
+    /*---------------------------WAX PAGE---------------------------*/
+    
+    /*---------------------------ABOUT PAGE---------------------------*/
+    
+    #about{
+        margin-top: var(--spacer-thr);
+    }
+    
+    #about img{
+        width: 100%;
+    }
+    
+    /*---------------------------FAQ PAGE---------------------------*/
+    
+    #faq article{
+        margin: var(--spacer-thr) auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--spacer-thr);
+        width: 80%;
+        line-height: 1.5;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #faq > *{
+        text-align: center;
+    }
+    
+    #faq h2{
+        margin-top: var(--spacer-dbl);
+        font-size: var(--fs-p);
+        font-weight: var(--fw-b);
+    }
+    
+    #faq p{
+        font-size: var(--fs-p);
+        margin-bottom: var(--spacer-dbl);
+    }
+    
+    #faq section li{
+        font-size: var(--fs-p);
+        text-align: left;
+        margin-bottom: var(--spacer);
+    }
+    
+    #faq section i{
+        font-size: var(--fs-p);
+        margin-right: var(--spacer);
+    }
+    
+    
+    /*---------------------------REVIEW PAGE---------------------------*/
+    
+    
+    
+    
+    /*---------------------------GALLERY PAGE---------------------------*/
+    #gallery{
+        display: grid;
+        gap: var(--spacer);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        margin: var(--spacer-thr);
+    }
+    
+    #gallery img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #gallery h1, #gallery section{ 
+        grid-column: 1 / span 2; 
+        text-align: center;
+    }
+    
+    #gallery .moveIt{
+        order: 2;
+    }
+    
+    #gallery .slide{
+        display: none;
+    }
+    
+    /*---------------------------CONTACT PAGE---------------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------------FOOTER---------------------------*/
+    
+    footer{
+        background-color: var(--secondary-color);
+        border-top: var(--border);
+        padding: var(--spacer) var(--spacer);
+        width: 100%;
+        margin-top: auto;
+        color: var(--neutral-lt-color);
+        display: grid;
+        gap: var(--spacer);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+        line-height: var(--line-h);
+        font-size: 1.2rem;
+        justify-items: center;
+        font-style: italic;
+    }
+    
+    footer #social{ 
+        grid-column: 1 / span 2; 
+        text-align: center;
+    }
+    
+    #social p{
+        margin-top: var(--spacer);
+        font-style:normal;
+    }
+    
+    footer i{
+        color: var(--neutral-lt-color);
+        margin: 0 var(--spacer);
+        font-size: 2.5rem;
+    }
+    
+    footer h3{
+        font-weight: var(--fw-b);
+        margin-bottom: var(--spacer);
+        font-style: italic;
+        font-size: var(--fs-p);
+    }
+    
+    footer dd{
+        margin-left: var(--spacer-dbl);
+    }
+    
+    footer dt{
+        font-weight: var(--fw-b);
+    }
+    
+    footer a{
+        color: var(--neutral-lt-color);
+        text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    /*---------------------------MEDIA---------------------------*/
+    @media screen and (min-width: 800px) {
+    
+    /*---------------------------MEDIA NAV---------------------------*/
+        .navTogglerMenu{
+            display: none;
+        }
+    
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacer);
+        }
+    
+        nav ul{
+            display: flex;}
+    
+        .navigation{
+            all: unset;
+        }
+    
+        .navigation{
+            display: flex ;
+            margin-left: auto;
+            list-style-type: none;
+            align-items: center;
+            padding: 0;  
+            width: 100%;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .navigation li{
+            border-bottom: none;
+        }
+        li.submenu{
+            position: relative;
+        }
+        nav ul a:link, nav ul a:visited{
+            font-size: var(--fs-p);
+        }
+        li.submenu>ul { 
+            display: none;
+            position: absolute;
+        }
+        nav > ul li:hover ul { 
+            display: block;
+            background-color: grey;
+            width: auto;
+    }
+        .logo {
+            width: 10%;
+            height: auto;
+            max-height: 125px;
+            max-width: 125px;
+        }
+    
+    /*---------------------------MEDIA BOOK NOW---------------------------*/
+        #bookNow{
+            border: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 30px; 
+            max-width: 154px;
+            right: 100px;
+        }
+    
+    /*---------------------------MEDIA HOME---------------------------*/
+    
+        .hide{
+            display: block;
+        }
+    
+        #home{
+            display: grid;
+            gap: var(--spacer);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr auto auto;
+            justify-items: center;
+            width: 90%;
+            margin: var(--spacer) auto var(--spacer-thr);
+            align-content: center;
+            max-width: 1200px;
+        }
+    
+        #home h1{
+            --fs-h1: 4.8rem;
+            grid-column: 1 / span 3; 
+        }
+    
+        #home p{
+            width: 60%;
+            text-align: center;
+            line-height: var(--line-h);
+            --fs-p: 2.4rem;
+            grid-column: 1 / span 3; 
+        }
+    
+        #home img{
+            width: 100%;
+            height: 100%;
+        }
+    
+        #home picture img{
+            width: 100%;
+            margin: 0;
+        }
+        
+    
+    
+    
+    /*---------------------------MEDIA FAQ PAGE---------------------------*/
+        #faq section ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+    
+    
+    
+    /*---------------------------MEDIA GALLERY PAGE---------------------------*/
+    
+    #gallery{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 1fr 1fr;
+        margin: var(--spacer-thr);
+    }
+    
+    #gallery h1{ 
+        grid-column: 1 / span 4; 
+    }
+    
+    #gallery section{ 
+        grid-column: 2 / span 2; 
+    }
+    
+    #gallery .moveIt{
+        order: 0;
+    }
+    
+    
+    
+    /*---------------------------MEDIA FOOTER---------------------------*/
+    
+        footer{
+            display: grid;
+            gap: var(--spacer-dbl);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            line-height: var(--line-h);
+            font-size: 1.6rem;
+            justify-items: center;
+            align-items: center;
+            padding: var(--spacer-dbl) var(--spacer-dbl);
+        }
+    
+        footer br{
+            display: none;
+        }
+    
+        footer h3{
+            font-size: 2.4rem;
+        }
+    
+        footer #social{  grid-column: 2 ;  }
+    
+        #hours{
+            order:3;
+        }
+    
+        #hours dl{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+    
+        footer section:first-of-type dl{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr auto;
+            max-width: 350px;
+            
+        }
+    
+        footer dd, footer dt{
+            margin: 0;
+        }
+    
+    }
+    
+    /*---------------------------MEDIA 1000px---------------------------*/
+    
+    @media screen and (min-width: 1000px) {
+    
+        nav ul a:link, nav ul a:visited{
+            font-size: 2.2rem;
+        }
+    
+        header{
+            max-height: 220px;
+        }
+    
+        nav{
+            max-height: 220px;
+        }
+    
+        #bookNow{
+            top: 50px; 
+            }
+    
+    }
+    
+    
+    
