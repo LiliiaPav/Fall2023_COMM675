@@ -8,14 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <title>Cutie-Contact us</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
-        <header>
-            <nav>
+          <header>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,7 +24,7 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
                        <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
@@ -55,29 +55,71 @@
                        </ul>
 
                     </li>
-                    <li  class="submenu current"><a href="contact-us.html">Contact Us</a></li>
+                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-
        </header>
+
        
+<!--
+       <nav aria-label="Main">
+		<ul>
+				<li><a href="…">Home</a></li>
+				<li><a href="…">Shop</a></li>
+				<li class="has-submenu">
+						<a href="…" aria-expanded="false">
+							Space Bears
+						</a>
+						<ul>
+								<li><a href="…">Space Bear 6</a></li>
+								<li><a href="…">Space Bear 6 Plus</a></li>
+						</ul>
+				</li>
+				<li><a href="…">Mars Cars</a></li>
+				<li><a href="…">Contact</a></li>
+		</ul>
+</nav>
+-->
 
        
 
-        <section id="bookNow">
+        <section id="bookNow" class="noMargin">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="contact-us">
+        <main id="contactUs">
             
           <h1>Contact us</h1>
           
+          <form action="mailto:name@gmail.com" method="post" id="contactForm">
+             
+              <label for="full-name"><span>Name</span></label>
+              <input type="text" id="full-name" name="full-name" value="" placeholder="" required autofocus>
+              
+              <label for="guestEmail"><span>Email</span></label>
+              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" required>
+              
+              <label for="subject"><span>Subject</span></label>
+              <input type="text" id="subject" name="subject" value="" placeholder="">
+              
+              <label for="message" id="yourMessage"><span>Your message</span></label>
+              <textarea name="message" id="message" placeholder=""></textarea>
+              
+              
+              <input type="submit" id="submitForm" value="Send Message">
+              
+           </form>
           
-          
-          
-          
-          
+           <section id="mapWrapper">
+            
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107534.78732592579!2d-117.05994584952128!3d32.62051541505504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9457c9e34186b%3A0x973f498fbf3cd113!2sCutie%20Salon%20%26%20Spa!5e0!3m2!1sen!2sus!4v1705556096343!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+             <img src="../images/salon.jpg" alt="exterior of the salon">
+        
+           </section>
+        
+                    
         </main>
 
        <footer>

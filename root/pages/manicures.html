@@ -8,14 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <title>Cutie-Manicures</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
-        <header>
-           <nav>
+          <header>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,11 +24,11 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
-                       <a class="current"  href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
-                           <li><a class="current" href="manicures.html">Manicures</a></li>
+                           <li><a href="manicures.html">Manicures</a></li>
                            <li><a href="pedicures.html">Pedicures</a></li>
                            <li><a href="acrylics.html">Acrylics</a></li>
                        </ul>
@@ -59,24 +59,38 @@
                 </ul>
             </nav>
 
-
-
        </header>
-
-
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="manicures">
+        <main id="service">
            
-           <h1>Manicures</h1> 
-
-          
-          
-          
-          
+           <h1>Manicures</h1>
+             
+           <picture>
+                <source media="(min-width: 800px)" srcset="../images/manicureDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/manicureMobile.jpg" >
+                <img src="../images/manicureDesktop.jpg" alt="showing off the colorful nails">
+            </picture>
+            
+            <dl>
+                <dt>Basic Manicure - $15 </dt>
+                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and polish.</dd>
+                <dt>French Manicure - $20 </dt>
+                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and French Nail.</dd>
+                <dt>Gel Manicure - $25 </dt>
+                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and Gel Manicure.</dd>
+                <dt>Gel French Manicure - $30 </dt>
+                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, and Gel French Nail.</dd>
+                <dt>Manicure &amp; Buff - $20 </dt>
+                <dd>Relaxing manicure and massage combo includes  cuticle care, nail shaping, hand massage, Buff, and polish.</dd>
+                <dt>Color Change only - $15 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your nails.</dd>
+                <dt>Color Change + gel - $20 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then redo your gel nails.</dd>
+            </dl>
           
           
         </main>

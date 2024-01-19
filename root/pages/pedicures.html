@@ -8,14 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <title>Cutie-Pedicures</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
-        <header>
-           <nav>
+         <header>
+             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -24,12 +24,12 @@
                 </label>
                         
                 <ul class="navigation">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a class="current" href="../index.html">Home</a></li>
                     <li class="submenu">
-                       <a class="current"  href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#" aria-expanded="false">Nail Services</a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
-                           <li><a class="current" href="pedicures.html">Pedicures</a></li>
+                           <li><a href="pedicures.html">Pedicures</a></li>
                            <li><a href="acrylics.html">Acrylics</a></li>
                        </ul>
                     </li>
@@ -50,7 +50,7 @@
                        <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="faq.html">FAQ</a></li>
-                           <li><a href="#">Reviews</a></li>
+                           <li><a href="review.html">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
 
@@ -59,19 +59,36 @@
                 </ul>
             </nav>
 
-
        </header>
-
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
         </section>
        
-        <main id="pedicures">
+        <main id="service">
             
             <h1>Pedicures</h1>
+            
+              <picture>
+                <source media="(min-width: 800px)" srcset="../images/pedicureDesktop.jpg">
+                <source media="(max-width: 799px)" srcset="../images/pedicureMobile.jpg" >
+                <img src="../images/pedicureDesktop.jpg" alt="showing off the colorful nails">
+            </picture>
           
-          
+            <dl>
+                <dt>Spa Pedicure - $28 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and polish.</dd>
+                <dt>Gel Pedicure - $35 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and gel pedicure.</dd>
+                <dt>French Pedicure - $33 </dt>
+                <dd>Soothe and spoil your feet with nail shaping, cuticle care, pumice-stone heel exfoliation, rejuvenating massage, and French pedicure.</dd>
+                <dt>Paraffin Dip - $5 </dt>
+                <dd>A dip into our hot paraffin wax deeply moisturizes the skin and strengthens the nails.</dd>
+                <dt>Color Change  - $10 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your pedicure.</dd>
+                <dt>Color Change + gel - $25 </dt>
+                <dd>This service includes  the removal of the filing, cuticles and then re-polishing your gel pedicure.</dd>
+            </dl>
           
           
           
