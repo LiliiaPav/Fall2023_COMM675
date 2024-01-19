@@ -14,8 +14,8 @@
     </head>
     
     <body>
-        <header>
-            <nav>
+       <header>
+             <nav>
                 <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
                 <input type="checkbox" class="navToggler" id="navToggler">
                 <label for="navToggler" class="navTogglerMenu" >
@@ -25,14 +25,39 @@
                         
                 <ul class="navigation">
                     <li><a class="current" href="index.html">Home</a></li>
-                    <li><a href="pages/library.html">Nail Services</a></li>
-                    <li><a href="pages/local.html">Hair Services</a></li>
-                    <li><a href="pages/local.html">Waxing Services</a></li>
-                    <li><a href="pages/local.html">About</a></li>
-                    <li><a href="pages/local.html">Contact Us</a></li>
+                    <li class="submenu">
+                       <a href="#" aria-expanded="false">Nail Services</a>
+                        <ul>
+                           <li><a href="pages/manicures.html">Manicures</a></li>
+                           <li><a href="pages/pedicures.html">Pedicures</a></li>
+                           <li><a href="pages/acrylics.html">Acrylics</a></li>
+                       </ul>
+                    </li>
+                    <li class="submenu">
+                       <a href="#">Hair Services</a>
+
+                       <ul>
+                           <li><a href="pages/hairColor.html">Coloring</a></li>
+                           <li><a href="pages/haircuts.html">Cuts</a></li>
+                           <li><a href="pages/hairstyling.html">Styling</a></li>
+                           <li><a href="pages/hairTreatment.html">Treatments</a></li>
+                       </ul>
+
+                    </li>
+                    <li><a href="pages/wax.html">Waxing Services</a></li>
+
+                    <li class="submenu">
+                       <a href="pages/about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                           <li><a href="pages/faq.html">FAQ</a></li>
+                           <li><a href="pages/review.html">Reviews</a></li>
+                           <li><a href="pages/gallery.html">Gallery</a></li>
+                       </ul>
+
+                    </li>
+                    <li class="submenu"><a href="pages/contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
-
 
        </header>
 
