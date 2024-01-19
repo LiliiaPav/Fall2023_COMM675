@@ -223,12 +223,13 @@ main h1, legend {
 
 /*---------------------------ABOUT PAGE---------------------------*/
 
-.crew-img {
-    width: 90%;
+#about{
+        margin-top: var(--spacer-thr);
+    }
     
-}
-
-
+    #about img{
+        width: 100%;
+    }
 
 /*---------------------------FAQ PAGE---------------------------*/
 
