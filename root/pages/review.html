@@ -76,31 +76,22 @@
 
         <main class="review-page">
   
-
-  
-  <article class="column-right">
-      
-       <h1>Review</h1>
-    
-     <aside class="column-left">
-  
-  <form> 
+<main id="review-page">
             
-        <fieldset> 
+          <h1>Review</h1>
+          
+          <form>
+             
+              <fieldset> 
               
-         <label>First Name:</label>
-              <input type="text"><br><br> 
-                       
-                        <label>Last Name:</label>
-              <input type="text">
-            <br><br> 
+        <label for="name"><span>Name</span></label>
+              <input type="text" id="name" name="name" value="" placeholder=""><br><br>
                       
-                       <label>Email Adress:</label> 
-                       <input type="email">
-            <br><br>
+                      <label for="guestEmail"><span>Email</span></label>
+              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" required><br><br>
                        
                          
-                       <label>Service Rating</label>     
+                       <label>Service Rating</label> <br><br>    
                        
                        <input type="radio">    
                          <label>1</label>
@@ -119,18 +110,18 @@
                                
         
                                          
-                                <label>Services:</label> 
+                                <label>Services:</label><br><br>
                                     
                                 <select name="service">      
                                             <option >What service did you have</option>       
                                             <option>Hair</option>      
                                             <option>Nails</option>      
                                             <option>Wax</option>     
-                                </select><br><br> 
+                                </select><br><br><br>
                                          
                                          
                                          
-                                <label>Would you recommend us to a friend:</label>   
+                                <label>Would you recommend us to a friend?</label> <br><br>
                                  
                                <label>Yes</label>  
                                              <input type="checkbox">     
@@ -139,60 +130,43 @@
 
                                <br><br>  
                                           
-                                   <label>Comments:</label><br>
+                                   <label>Comments:</label><br><br>
                                        
-                                        <textarea name="comments" rows="3" cols="32"></textarea>
-                                        <br><br>  
-                                                                
-                                        <input type="submit" >
+                                    
+              <textarea name="message" id="message" placeholder=""></textarea><br><br>
+              
+              
+              <input type="submit" id="submitform-review" value="Send Message">
                                         </fieldset> 
                                         
-      </form> 
-      
-  </aside>
-  
+              
+           </form>
+          
+        
+           
+     <dl  class="commentWrapper">
      
-      <p>OMG, Song is so talented! My daughter is so happy with her nails. She was looking for a new modern style that no one was offering (jelly nails), but Song nailed it.</p>
+       <dt>OMG, Song is so talented! My daughter is so happy with her nails. She was looking for a new modern style that no one was offering (jelly nails), but Song nailed it.</dt>
     
-     <h3>-Christelle V.</h3>
+     <dd>-Christelle V.</dd>
     
-    <br>
+  
     
-     <p>I called to see if they'd be able to see me and I was told to come in asap which was great. When I arrived I showed Song what style and polish I wanted. She immediately started on my nails. I forgot the name of the tech who did my toes but she was great too and quick. Price wasn't bad and I was very happy with my pink nails</p>
+     <dt>I called to see if they'd be able to see me and I was told to come in asap which was great. When I arrived I showed Song what style and polish I wanted. She immediately started on my nails. I forgot the name of the tech who did my toes but she was great too and quick. Price wasn't bad and I was very happy with my pink nails</dt>
        
-        <h3> -Deanna A.</h3>
+        <dd> -Deanna A.</dd>
 
-    <br>
+ 
     
-    <p>This time I got my feet done by Daisy (which she did perfectly, of course!) and I got my hands done my Cece.
-</p>
+    <dt>This time I got my feet done by Daisy (which she did perfectly, of course!) and I got my hands done my Cece.
+</dt>
 
-<h3>-Alyssa L.</h3>  
-     
-  </article>
-  
-  
-  
- </main>
-          
-          
+<dd>-Alyssa L.</dd>  
+     </dl>
         
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-            
         
-     
-  
-      
-      
+                    
+        </main>
       
       
        <footer>
