@@ -358,38 +358,33 @@
 
 /*---------------------------Review--------------------------*/
 
-.column-left {
-  float: left;
- font-size: 1.2rem;
-  padding: 30px;
-  height: 500px;
-  margin-top: 60px;
+#review-page {
+        min-height: 100%;
+        grid-template-columns: repeat( 1, 2fr);
+        grid-template-rows: auto 4fr;
+        column-gap: var(--spacer-thr);
+    }
     
-}
-
-.column-right {
-    padding: 60px;
-    font-family: monsterrat;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background-color: #cccccc,
-
-}
-
-.review-page {
-    background-image: url(../images/reviewDesktop.jpg);
-    background-repeat: no-repeat;
-}
-
-input, textarea, select {
-      border-radius: var(--border-radius);
-      border-color: var(--primary-color);
-}
-
-fieldset {
-    border: hidden;
+    #review-page h1{
+        margin-bottom: calc(var(--spacer-dbl)*2);
+        grid-column: 1/ span 2;
+    }
     
-}
+    form{ 
+        
+        width: 10%;
+        margin-top: 0;
+        
+    }
+     
+    .commentWrapper {
+        width: 90%;
+    }
+    
+    #review-page input#submitform{
+        margin-bottom: 0;
+    }
+   
 
 
 
