@@ -16,7 +16,7 @@
 --secondary-color: #E19FAE;
 --tetriary-color: #DB2B41;
 --neutral-lt-color: white;
---accent-color: #BDB0D9;
+--accent-dark-color: #C27083;
 
 /*---------helper-----------*/
 --spacer: 1rem;
@@ -206,7 +206,7 @@ main h1{
 }
 
 #service dt{
-    font-size: var(--fs-p);
+    font-size: var(--fs-sub);
     font-weight: var(--fw-b);
     line-height: var(--line-h);
 }
@@ -215,6 +215,13 @@ main h1{
     font-size: var(--fs-p);
     line-height: var(--line-h);
     margin-bottom: 1.6rem;
+}
+
+.nails  {
+    display: block;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: var(--fw-b);
 }
 
 /*---------------------------ABOUT PAGE---------------------------*/
