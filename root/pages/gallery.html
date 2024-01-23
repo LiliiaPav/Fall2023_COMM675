@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="../js/main.js"></script>
-        <title>Cutie</title>
+        <title>Cutie-Gallery</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
@@ -19,16 +19,12 @@
         <header>
             <nav>
                 <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
-                <input type="checkbox" class="navToggler" id="navToggler">
-                <label for="navToggler" class="navTogglerMenu" >
-                    <i class="fa-solid fa-bars menu openBtn"></i>
-                    <i class="fa-solid fa-xmark menu closeBtn"></i>
-                </label>
+                <i class="fa-solid fa-bars menu "></i>
                         
                 <ul class="navigation">
                     <li><a href="../index.html">Home</a></li>
                     <li class="submenu">
-                       <a href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#">Nail Services <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
                            <li><a href="pedicures.html">Pedicures</a></li>
@@ -36,7 +32,7 @@
                        </ul>
                     </li>
                     <li class="submenu">
-                       <a href="#">Hair Services</a>
+                       <a href="#">Hair Services <i class="fa-solid fa-caret-down"></i></a>
 
                        <ul>
                            <li><a href="hairColor.html">Coloring</a></li>
@@ -49,15 +45,16 @@
                     <li><a href="wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a class="current" href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a class="current" href="#">About <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
+                            <li ><a href="about-us.html">Our Team</a></li> 
                            <li><a href="faq.html">FAQ</a></li>
                            <li><a href="review.html">Reviews</a></li>
-                           <li><a class="current" href="gallery.html">Gallery</a></li>
+                           <li class="current"><a href="gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -71,49 +68,48 @@
         <main id="gallery">
             
             <h1>Gallery</h1>
-            <img class="moveIt" src="../images/gall01.jpg" alt="">
+            <img class="moveIt" src="../images/gall01.jpg" alt="Yin yang manicure">
             <section class="slider">
-                <img class='slide' src="../images/gall11.jpg" alt="">
-                <img class='slide' src="../images/gall12.jpg" alt="">
-                <img class='slide' src="../images/gall13.jpg" alt="">
+                <img class="slide" src="../images/gall11.jpg" alt="Christmas style manicure">
+                <img class="slide" src="../images/gall12.jpg" alt="Braided bun dark hair">
+                <img class="slide" src="../images/gall13.jpg" alt="Red manicure and black pedicure">
             </section>
-            <img src="../images/gall02.jpg" alt="">
-            <img src="../images/gall06.jpg" alt="">
-            <img src="../images/gall04.jpg" alt="">
-            <img src="../images/gall03.jpg" alt="">
-            <img src="../images/gall05.jpg" alt="">
+            <img src="../images/gall02.jpg" alt="Braided bun blond hair">
+            <img src="../images/gall06.jpg" alt="Black and green manicure">
+            <img src="../images/gall04.jpg" alt="Pink manocure and roses">
+            <img src="../images/gall03.jpg" alt="Twisted halo hairstyle">
+            <img src="../images/gall05.jpg" alt="Pink manicure">
 
         </main>
 
        <footer>
-            <section >
-                <h3>Contact us</h3>
-                <dl>
-                    <dt>Address:</dt>
-                    <dd>1750 E. Palomar St.
-                        <br>
-                        Suite&nbsp;9
-                        <br>
-                        Chula Vista, CA 
-                        91913</dd>
-                    <dt>Phone:</dt>
-                    <dd>
-                        (619) 656-8903
-                    </dd>
-                  </dl>
-            </section>
+        <section >
+            <h3>Contact us</h3>
+            <dl>
+                <dt>Address:</dt>
+                <dd>1750 E. Palomar&nbsp;St.
+                    Suite&nbsp;9
+                    <br>
+                    Chula&nbsp;Vista,&nbsp;CA 
+                    91913</dd>
+                <dt>Phone:</dt>
+                <dd>
+                    (619) 656-8903
+                </dd>
+              </dl>
+        </section>
 
-            <section id="hours">
-                <h3>Business Hours</h3>
-                <dl >
-                    <dt>Mon-Fri</dt>
-                    <dd> 10:00 AM - 8:00 PM</dd>
-                    <dt>Sat</dt>
-                    <dd> 9:00 AM - 6:00 PM</dd>
-                    <dt>Sun</dt>
-                    <dd> 11:00 AM - 5:00 PM</dd>
-                  </dl>
-            </section>
+        <section id="hours">
+            <h3>Business Hours</h3>
+            <dl >
+                <dt>Mon-Fri</dt>
+                <dd>10:00&nbsp;AM&nbsp;- 8:00&nbsp;PM</dd>
+                <dt>Sat</dt>
+                <dd>9:00&nbsp;AM&nbsp;- 6:00&nbsp;PM</dd>
+                <dt>Sun</dt>
+                <dd>11:00&nbsp;AM&nbsp;- 5:00&nbsp;PM</dd>
+              </dl>
+        </section>
 
             <section id="social">
                 <a href="https://www.instagram.com/nailsbysongn/?hl=en" target="_blank">

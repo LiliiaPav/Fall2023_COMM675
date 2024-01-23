@@ -8,7 +8,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+        <title>Cutie-Review</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
@@ -19,17 +21,13 @@
        
         <header>
             <nav>
-                <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
-                <input type="checkbox" class="navToggler" id="navToggler">
-                <label for="navToggler" class="navTogglerMenu" >
-                    <i class="fa-solid fa-bars menu openBtn"></i>
-                    <i class="fa-solid fa-xmark menu closeBtn"></i>
-                </label>
+                <img class="logo" src="../images/Cutie-logo.png" alt="logo cutie">
+                <i class="fa-solid fa-bars menu "></i>
                         
                 <ul class="navigation">
                     <li><a href="../index.html">Home</a></li>
                     <li class="submenu">
-                       <a href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#">Nail Services <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
                            <li><a href="pedicures.html">Pedicures</a></li>
@@ -37,7 +35,7 @@
                        </ul>
                     </li>
                     <li class="submenu">
-                       <a href="#">Hair Services</a>
+                       <a href="#">Hair Services <i class="fa-solid fa-caret-down"></i></a>
 
                        <ul>
                            <li><a href="hairColor.html">Coloring</a></li>
@@ -50,24 +48,19 @@
                     <li><a href="wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a class="current" href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a class="current" href="#">About <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
+                            <li><a href="about-us.html">Our Team</a></li> 
                            <li><a href="faq.html">FAQ</a></li>
-                           <li><a class="current" href="review.html">Reviews</a></li>
+                           <li  class="current"><a href="review.html">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
-
-
-
-    
-
-
-       </header>
+        </header>
 
         <section id="bookNow">
             <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
@@ -75,128 +68,109 @@
         
 
   
-<main id="review-page">
-            
-          <h1>Review</h1>
+
+
+
+ <main id="review-page">
           
-          <form>
-             
-              <fieldset> 
-              
-        <label for="name"><span>Name</span></label>
-              <input type="text" id="name" name="name" value="" placeholder=""><br><br>
-                      
-                      <label for="guestEmail"><span>Email</span></label>
-              <input type="text" id="guestEmail" name="guestEmail" value="" placeholder="" required><br><br>
-                       
-                         
-                       <label>Service Rating</label> <br><br>    
-                       
-                       <input type="radio">    
-                         <label>1</label>
-                             
-                              <input type="radio">     
-                              <label>2</label> 
-                                  
-                              <input type="radio">     
-                              <label>3</label>  
-                                 
-                              <input type="radio">     
-                              <label>4</label>    
-                              
-                               <input type="radio">     
-                               <label>5</label><br><br> 
-                               
-        
-                                         
-                                <label>Services:</label><br><br>
-                                    
-                                <select name="service">      
-                                            <option >What service did you have</option>       
-                                            <option>Hair</option>      
-                                            <option>Nails</option>      
-                                            <option>Wax</option>     
-                                </select><br><br><br>
-                                         
-                                         
-                                         
-                                <label>Would you recommend us to a friend?</label> <br><br>
-                                 
-                               <label>Yes</label>  
-                                             <input type="checkbox">     
-                               <label> No</label> 
-                                            <input type="checkbox">     
+    <h1>Reviews</h1>
+    <section id="reviewForm">
+    <form>
+      <fieldset>
+            <legend>How was your experience?</legend>
+          <label for="name"><span>Name</span></label>
+          <input type="text" id="name" name="name" placeholder=""><br><br>
+          <label for="guestEmail"><span>Email</span></label>
+          <input type="text" id="guestEmail" name="guestEmail" placeholder="" required><br><br>
+                
+                  
+          <label>Service Rating</label> <br><br>   
+                 
+          <input type="radio" name="rating" value="1" id="1star">
+          <label for="1star">1</label>
+          <input type="radio" name="rating" value="2" id="2star">
+          <label for="2star">2</label>
+          <input type="radio" name="rating" value="3" id="3star">
+          <label for="3star">3</label>
+          <input type="radio" name="rating" value="4" id="4star">
+          <label for="4star">4</label>
+          <input type="radio" name="rating" value="5" id="5star">
+          <label for="5star">5</label>
+          <br><br>
+                        
+          <label>What service did you have:</label><br><br>
+          <label>Hair</label> 
+          <input type="checkbox">    
+          <label>Nails</label>
+          <input type="checkbox"> 
+          <label>Wax</label> 
+          <input type="checkbox"> 
+          <br><br><br>  
 
-                               <br><br>  
-                                          
-                                   <label>Comments:</label><br><br>
-                                       
-                                    
-              <textarea name="message" id="message" placeholder=""></textarea><br><br>
-              
-              
-              <input type="submit" id="submitform-review" value="Send Message">
-                                        </fieldset> 
-                                        
-              
-           </form>
-          
-        
-           
-     <dl  class="commentWrapper">
-     
-       <dt>OMG, Song is so talented! My daughter is so happy with her nails. She was looking for a new modern style that no one was offering (jelly nails), but Song nailed it.</dt>
-    
-     <dd>-Christelle V.</dd>
-    
-  
-    
-     <dt>I called to see if they'd be able to see me and I was told to come in asap which was great. When I arrived I showed Song what style and polish I wanted. She immediately started on my nails. I forgot the name of the tech who did my toes but she was great too and quick. Price wasn't bad and I was very happy with my pink nails</dt>
-       
-        <dd> -Deanna A.</dd>
-
- 
-    
-    <dt>This time I got my feet done by Daisy (which she did perfectly, of course!) and I got my hands done my Cece.
-</dt>
-
-<dd>-Alyssa L.</dd>  
-     </dl>
-        
-        
                     
-        </main>
-      
-      
-       <footer>
-            <section >
-                <h3>Contact us</h3>
-                <dl>
-                    <dt>Address:</dt>
-                    <dd>1750 E. Palomar St.
-                        <br>
-                        Suite&nbsp;9
-                        <br>
-                        Chula Vista, CA 
-                        91913</dd>
-                    <dt>Phone:</dt>
-                    <dd>
-                        (619) 656-8903
-                    </dd>
-                  </dl>
-            </section>
+          <label>Would you recommend us to a friend?</label> <br><br>
+          <select name="recomend">     
+              <option >Recomend?</option>      
+              <option>Yes</option>     
+              <option>No</option>     
+              <option>Not sure</option>    
+          </select><br><br><br>
 
-            <section id="hours">
-                <h3>Business Hours</h3>
-                <dl >
-                    <dt>Mon-Fri</dt>
-                    <dd> 10:00 AM - 8:00 PM</dd>
-                    <dt>Sat</dt>
-                    <dd> 9:00 AM - 6:00 PM</dd>
-                    <dt>Sun</dt>
-                    <dd> 11:00 AM - 5:00 PM</dd>
-                  </dl>
-            </section>
+                                   
+          <label>Message:</label><br><br>
+          <textarea name="message" id="message" placeholder=""></textarea><br><br>
+       
+          <input type="submit" id="submitform-review" value="Share Feedback">
+      </fieldset>
+  </form>
+</section>
+<dl  class="commentWrapper">
+
+<dt> <span class="icon quotes"></span> OMG, Song is so talented! My daughter is so happy with her nails. She was looking for a new modern style that no one was offering (jelly nails), but Song nailed it.</dt>
+
+<dd>— Christelle V.</dd>
+
+<dt> <span class="icon quotes"></span> I called to see if they'd be able to see me and I was told to come in asap which was great. When I arrived I showed Song what style and polish I wanted. She immediately started on my nails. I forgot the name of the tech who did my toes but she was great too and quick. Price wasn't bad and I was very happy with my pink nails</dt>
+
+<dd>— Deanna A.</dd>
+
+
+<dt> <span class="icon quotes"></span> I don't usually write reviews, but this place deserves one! My friend and I got shellac manicures and basic pedicures. They turned out beautiful! The staff was very well mannered and nice. We were in and out in 40 minutes for both! I have never felt so pampered! I would 100&#37; come back!</dt>
+
+
+<dd>— Alyssa L.</dd> 
+</dl>
+        
+  </main>
+
+       <footer>
+        <section >
+            <h3>Contact us</h3>
+            <dl>
+                <dt>Address:</dt>
+                <dd>1750 E. Palomar&nbsp;St.
+                    Suite&nbsp;9
+                    <br>
+                    Chula&nbsp;Vista,&nbsp;CA 
+                    91913</dd>
+                <dt>Phone:</dt>
+                <dd>
+                    (619) 656-8903
+                </dd>
+              </dl>
+        </section>
+
+        <section id="hours">
+            <h3>Business Hours</h3>
+            <dl >
+                <dt>Mon-Fri</dt>
+                <dd>10:00&nbsp;AM&nbsp;- 8:00&nbsp;PM</dd>
+                <dt>Sat</dt>
+                <dd>9:00&nbsp;AM&nbsp;- 6:00&nbsp;PM</dd>
+                <dt>Sun</dt>
+                <dd>11:00&nbsp;AM&nbsp;- 5:00&nbsp;PM</dd>
+              </dl>
+        </section>
 
             <section id="social">
                 <a href="https://www.instagram.com/nailsbysongn/?hl=en" target="_blank">

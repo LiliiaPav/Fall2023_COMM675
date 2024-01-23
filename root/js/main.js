@@ -19,5 +19,31 @@ $(document).ready(function(){
       // Show the next slide
       $(slides[slideIndex]).fadeIn(1000);
     }, 5000); 
+
+
+
+    // Mobile version open menu and change to X
+    $(".menu").click(function(){
+      $(this).toggleClass("fa-times");
+      $(".navigation").toggleClass("active");
+  })
+
+
+// Open submenu with fade
+  $( ".submenu" ).hover(function() {     
+    $(this).find('ul').stop().fadeToggle(10);
+ });
+
+ // Semd alert on the button click
+ $( "#submitform-review" ).click(function() {     
+  alert ("Thank you for your Review");
+});
+ 
+$( "#submitForm" ).click(function() {     
+  alert ("Thank you for contacting us. We will get back to you shortly ");
+});
+
+
+
 })
 

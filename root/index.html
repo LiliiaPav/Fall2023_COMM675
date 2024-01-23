@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
         <title>Cutie</title>
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -16,17 +18,13 @@
     <body>
         <header>
              <nav>
-                <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
-                <input type="checkbox" class="navToggler" id="navToggler">
-                <label for="navToggler" class="navTogglerMenu" >
-                    <i class="fa-solid fa-bars menu openBtn"></i>
-                    <i class="fa-solid fa-xmark menu closeBtn"></i>
-                </label>
+                <img class="logo" src="images/Cutie-logo.png" alt="logo cutie">
+                <i class="fa-solid fa-bars menu"></i>
                         
                 <ul class="navigation">
                     <li><a class="current" href="index.html">Home</a></li>
                     <li class="submenu">
-                       <a href="#" aria-haspopup="true">Nail Services</a>
+                        <a href="#">Nail Services <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="pages/manicures.html">Manicures</a></li>
                            <li><a href="pages/pedicures.html">Pedicures</a></li>
@@ -34,9 +32,8 @@
                        </ul>
                     </li>
                     <li class="submenu">
-                       <a href="#" aria-haspopup="true">Hair Services</a>
-
-                       <ul>
+                        <a href="#">Hair Services <i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
                            <li><a href="pages/hairColor.html">Coloring</a></li>
                            <li><a href="pages/haircuts.html">Cuts</a></li>
                            <li><a href="pages/hairstyling.html">Styling</a></li>
@@ -45,17 +42,17 @@
 
                     </li>
                     <li><a href="pages/wax.html">Waxing Services</a></li>
-
                     <li class="submenu">
-                       <a href="pages/about-us.html" aria-haspopup="true">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="#">About <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
-                           <li><a href="pages/faq.html">FAQ</a></li>
-                           <li><a href="pages/review.html">Reviews</a></li>
-                           <li><a href="pages/gallery.html">Gallery</a></li>
+                            <li><a href="pages/about-us.html">Our Team</a></li>
+                            <li><a href="pages/faq.html">FAQ</a></li>
+                            <li><a href="pages/review.html">Reviews</a></li>
+                            <li><a href="pages/gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="pages/contact-us.html">Contact Us</a></li>
+                    <li><a href="pages/contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -86,11 +83,10 @@
                 <h3>Contact us</h3>
                 <dl>
                     <dt>Address:</dt>
-                    <dd>1750 E. Palomar St.
-                        <br>
+                    <dd>1750 E. Palomar&nbsp;St.
                         Suite&nbsp;9
                         <br>
-                        Chula Vista, CA 
+                        Chula&nbsp;Vista,&nbsp;CA 
                         91913</dd>
                     <dt>Phone:</dt>
                     <dd>
@@ -103,11 +99,11 @@
                 <h3>Business Hours</h3>
                 <dl >
                     <dt>Mon-Fri</dt>
-                    <dd> 10:00 AM - 8:00 PM</dd>
+                    <dd>10:00&nbsp;AM&nbsp;- 8:00&nbsp;PM</dd>
                     <dt>Sat</dt>
-                    <dd> 9:00 AM - 6:00 PM</dd>
+                    <dd>9:00&nbsp;AM&nbsp;- 6:00&nbsp;PM</dd>
                     <dt>Sun</dt>
-                    <dd> 11:00 AM - 5:00 PM</dd>
+                    <dd>11:00&nbsp;AM&nbsp;- 5:00&nbsp;PM</dd>
                   </dl>
             </section>
 

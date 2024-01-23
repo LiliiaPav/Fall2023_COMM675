@@ -6,59 +6,242 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">c
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <title>Style Guide-Cutie</title>
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
+      <main id="styleGuide">
        <h1>BRANDING</h1>
        
        <img class='logo' src="images/Cutie-logo.png" alt="logo cutie">
        
-       <section>
+       <section id="color">
           <h2>Color</h2>
-          <div class="color">
+          <div>
+              <div class="colorBox"></div>
               <p>#F14F74</p>
           </div>
-          <div class="color">
+          <div>
               <p>#E19FAE</p>
           </div>
           <div>
               <p>#DB2B41</p>
           </div>
-          <div class="color">
-              <p>#fff</p>
+          <div>
+              <p class="border">#fff</p>
           </div>
-          <div class="color">
-              <p>#BDB0D9</p>
+          <div>
+              <p>#C27083</p>
           </div>
-          <div class="color">
-              <p></p>
+          <div>
+              <p>#808080</p>
           </div>   
        </section>
        
-       <article class="text">
+       <article id="typo">
           <h2>Typography</h2>
           
           <section>
-             <h3>Font Family</h3>
-             <p>Primary: Montserrat', sans-serif</p>
-             <p>Headline, Button: Leckerli One', cursive</p>
-             <section>
-                <h1>Header 1</h1>
-                <p>Home page: Leckerli One, Regular(400)  36px</p>
-                
-             </section>
+              <h3>Font Family</h3>
+              <p>Primary : Montserrat', sans-serif</p>
+              <p>Headline : Leckerli One', cursive </p>
+              <p>(color: transparent), (text-shadow: 3px 3px 3px rgba(255,255,255,.2), 0 0 #DB2B41)</p>
           </section>
           
+          
+          <section>
+              <h3>Header</h3>
+              <dl>
+                  <dt class="nav">Navigation</dt>
+                  <dd>Montserrat Bold 16px</dd>
+              </dl>
+          </section>
+          
+          <section>
+             <h3>Footer</h3>
+             <dl>
+                 <dt class="regular-b">Heading 3</dt>
+                 <dd>Small Screen : Montserrat Bold 16px</dd>
+                 <dt class="h3-big">Heading 3</dt>
+                 <dd>Big Screen : Montserrat Bold 24px</dd>
+                 <dt class="ft-sml-b">Definition Term</dt>
+                 <dd>Small Screen : Montserrat Bold 12px</dd>
+                  <dt class="regular-b">Definition Term</dt>
+                 <dd>Big Screen : Montserrat Bold 16px</dd>
+                 <dt class="ft-sml">Definition Description</dt>
+                 <dd>Small Screen : Montserrat Regular 12px</dd>
+                 <dt class="regular">Definition Description</dt>
+                 <dd>Big Screen : Montserrat Regular 16px</dd>
+                 <dt class="ft-sml">&copy; Copyright</dt>
+                 <dd>Small Screen : Montserrat Regular 12px</dd>
+                 <dt class="regular">&copy; Copyright</dt>
+                 <dd>Big Screen : Montserrat Regular  16px</dd>
+             </dl>
+           </section> 
+          
+           <section>
+              <h3>Main on Small Screen (max-width:799px)</h3>
+              <dl class="half">
+                 <dt class="h1">Heading 1</dt>
+                 <dd>Leckerli One Bold 36px</dd>
+                 <dt class="regular-b">Heading 2</dt>
+                 <dd>Montserrat Bold 16px</dd>
+                 <dt class="regular-b">Definition Term</dt>
+                 <dd>Montserrat Bold 16px</dd>
+                 <dt class="regular">Definition Description</dt>
+                 <dd>Montserrat Regular 16px</dd>
+              </dl>
+              
+              <article class="half">
+                 <p>Welcome to Cutie Salon and Spa where beauty meets charm! We believe in offering amazing service with beautiful results which helps to keep our clients loyal and happy. Come and experience our salon for yourself!</p>
+                 <p>Montserrat Regular 16px</p>
+             </article>
+            </section>
+          
+          <section>
+             <h3>Main on Big Screen (min-width:800px)</h3>
+             <dl class="half">
+                <dt class="h1-home">Heading 1</dt>
+                <dd>Home : Leckerli One Bold 48px</dd>
+                <dt class="h1">Heading 1 </dt>
+                <dd>Others : Leckerli One Bold 36px</dd>
+                <dt class="h2">Heading 2</dt>
+                <dd>Montserrat Bold 16px</dd>
+                <dt class="dt">Definition Term</dt>
+                <dd>Montserrat Bold 18px</dd>
+                <dt class="dd">Definition Description</dt>
+                <dd>Montserrat Regular 18px</dd>
+             </dl>
+             
+             <article class="half">
+                 <p>Welcome to Cutie Salon and Spa where beauty meets charm! We believe in offering amazing service with beautiful results which helps to keep our clients loyal and happy. Come and experience our salon for yourself!</p>
+                 <p>Montserrat Regular 24px</p>
+                 <br>
+                 <p>We are dedicated to providing our clients with the highest quality products and ensuring a clean and satisfying experience. If you would like to book an appointment or learn more about our salon, please feel free to contact us directly.</p>
+                 <p>Montserrat Regular 16px</p>
+             </article>
+          </section>
+           
+           <p>line height: 1.5</p>
            
        </article>
        
-      
-     
+        <section id="buttonStyle">
+            <h2>Buttons</h2>
         
+            <section>
+              <h3>Book Now Button</h3>
+              <a class="button" href="tel:6196568903"><i class="fa-solid fa-phone"></i>Book Now</a>
+              <ul>
+                 <li>Font family: Montserrat</li>
+                 <li>Font size: 20px</li>
+                 <li>Font color: #fff</li>
+                 <li>Background color: #F14F74</li>
+              </ul>
+            </section>  
+            
+            <section>
+            <h3>Form Button</h3>
+            <button type="submit" id="submitForm">Send Message</button>
+            <ul>
+              <li>Font family: Leckerli One</li>
+              <li>Font size: 24px</li>
+              <li>Fot color: #fff</li>
+              <li>Background color: #F14F74</li>
+              <li>Border-radius: 6px</li> 
+           </ul>
+        </section>
+           
+        </section>
+       
+       <section id="formStyle">
+        <h2>Form</h2>
+         <form action="#" method="post">
+             <fieldset>
+                 <legend>Legend</legend>
+                      <ul id="contactForm">
+                          <li>
+                               <label for="fullName" id="inside">
+                                  <span>label</span>
+                                  <input type="text" name="fullName" id="fullName" value="" placeholder="" required>
+                               </label>
+                          </li>
+                          <li>
+                              <label for="checkbox" id="customBox">
+                                 <input type="checkbox" name="check" id="checkbox" value="">
+                                 <span class="fa-solid fa-check"></span>Check box
+                              </label>
+                          </li>
+                          <li>
+                              <label for="radio" id="customRadio">
+                                 <input type="radio" name="radio" id="radio" value="">
+                                 <span></span>Radio button
+                              </label>
+                          </li>
+                          <li>
+                               <label id="customOption" for="serviceOp"> Dropdown </label>
+                               <select name="serviceOp" id="serviceOp">
+                                  <option value="nail">Nail</option>
+                                  <option value="hair">Hair</option>
+                                  <option value="waxing">Waxing</option>
+                              </select>
+                          </li>
+                  
+                          <li>
+                              <label for="message" id="yourMessage">
+                                 <span>label</span>
+                                 <textarea name="message" id="message" placeholder=""></textarea>
+                              </label>
+                          </li>
+                      </ul>
+             </fieldset>
+           </form>
+           
+            <ul>
+                <li>Fieldset : (border:)</li>
+                <li>label : ( font-size:13px )</li>
+                <li>Input : ( font-size:16px )</li>
+                <li>Text box, Text area : <br>( border: solid 1px rgba(241,79,116,.5)) <br> (border-radius:6px)    </li>
+                <li>Text box:( height:40px )</li>
+                <li>Radio button, Check box : <br>( font-size:16px ),( color:#636363 ) <br></li>
+            </ul>    
+       </section>
+       
+        <section id="icons">
+               <h2>Icons</h2>
+               <section id="social">
+                  <ul>
+                      <li><a href="https://www.instagram.com/nailsbysongn/?hl=en" target="_blank">
+                    <i class="fab fa-instagram"></i></a></li>
+                      <li>  <a href="https://www.facebook.com/cutiesalonandspa21" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="https://www.google.com/search?q=cutie+salon+and+spa&rlz=1C1CHBF_enUS841US841&sxsrf=APwXEdfS2zU_fNyrIYIJpRTdMZMovuBXJg%3A1685845737187&ei=6fZ7ZOWMC9PhkPIP7OWngAE&gs_ssp=eJzj4tVP1zc0LEovzilLSSs2YLRSNaiwMEixNDE1T7ZMNTYxtDBLsjKosDQ3TjOxtEhLSjNOTjE0NPYSTi4tyUxVKE7Myc9TSMxLUSguSAQAPnEWqA&oq=cutie+salon&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgBMgoIABCKBRCwAxBDMhMILhCABBAUEIcCEMcBEK8BELADMg0IABCABBAUEIcCELADMggIABCABBCwAzIJCAAQBxAeELADMggIABCABBCwAzIKCAAQgAQQsAMQCjIHCAAQHhCwAzIJCAAQCBAeELADMgkIABAIEB4QsANKBAhBGAFQAFgAYNgXaAFwAHgAgAEAiAEAkgEAmAEAwAEByAEK&sclient=gws-wiz-serp#lrd=0x80d9457c9e34186b:0x973f498fbf3cd113,1,,,," target="_blank">
+                    <i class="fa-brands fa-google"></i></a></li>
+                      <li><a href="https://www.yelp.com/biz/cutie-nails-chula-vista" target="_blank">
+                    <i class="fa-brands fa-yelp"></i></a></li>
+                  </ul>
+                  <p>&copy; Copyright 2024 Cutie Salon</p>
+               </section>
+                   
+               <section id="yelp">
+                    <ul>
+                    <li><span class="fa-solid fa-calendar-day"></span></li>
+                    <li><span class="fa-solid fa-xmark"></span></li>
+                    <li><span class="fa-solid fa-square-parking"></span></li>
+                    <li><span class="fa-solid fa-scissors"></span></li>
+                    <li><span class="fa-solid fa-wifi"></span></li>
+                    <li><span class="fa-solid fa-earth-asia"></span></li>
+                    <li><span class="fa-regular fa-user"></span></li>
+                    <li><span class="fa-solid fa-venus"></span></li>
+                </ul>
+            </section> 
+        
+          </section>
+     
+       </main> 
     </body>
 </html>

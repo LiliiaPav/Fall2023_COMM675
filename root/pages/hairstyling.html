@@ -8,25 +8,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <title>Cutie</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="../js/main.js"></script>
+        <title>Cutie-Hair Styling</title>
         <link href="../css/reset.css" rel="stylesheet" type="text/css">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
         <header>
-             <nav>
-                <img class='logo' src="../images/Cutie-logo.png" alt="logo cutie">
-                <input type="checkbox" class="navToggler" id="navToggler">
-                <label for="navToggler" class="navTogglerMenu" >
-                    <i class="fa-solid fa-bars menu openBtn"></i>
-                    <i class="fa-solid fa-xmark menu closeBtn"></i>
-                </label>
+            <nav>
+                <img class="logo" src="../images/Cutie-logo.png" alt="logo cutie">
+                <i class="fa-solid fa-bars menu "></i>
                         
                 <ul class="navigation">
-                    <li><a class="current" href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li class="submenu">
-                       <a href="#" aria-expanded="false">Nail Services</a>
+                       <a href="#">Nail Services <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
                            <li><a href="manicures.html">Manicures</a></li>
                            <li><a href="pedicures.html">Pedicures</a></li>
@@ -34,12 +32,12 @@
                        </ul>
                     </li>
                     <li class="submenu">
-                       <a href="#">Hair Services</a>
+                       <a class="current" href="#">Hair Services <i class="fa-solid fa-caret-down"></i></a>
 
                        <ul>
                            <li><a href="hairColor.html">Coloring</a></li>
                            <li><a href="haircuts.html">Cuts</a></li>
-                           <li><a href="#">Styling</a></li>
+                           <li class="current" ><a href="hairstyling.html">Styling</a></li>
                            <li><a href="hairTreatment.html">Treatments</a></li>
                        </ul>
 
@@ -47,15 +45,16 @@
                     <li><a href="wax.html">Waxing Services</a></li>
 
                     <li class="submenu">
-                       <a href="about-us.html">About&nbsp;us <i class="fa-solid fa-caret-down"></i></a>
+                       <a href="#">About <i class="fa-solid fa-caret-down"></i></a>
                         <ul>
+                            <li ><a href="about-us.html">Our Team</a></li> 
                            <li><a href="faq.html">FAQ</a></li>
                            <li><a href="review.html">Reviews</a></li>
                            <li><a href="gallery.html">Gallery</a></li>
                        </ul>
 
                     </li>
-                    <li class="submenu"><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -75,16 +74,16 @@
             </picture>
 
          <dl>
-         <dt>Updo's - $55 & Up</dt>
+         <dt>Updo's - &#36;55 & Up</dt>
          <dd>Choose from our selection of updo hairstyles to elevate your look for any special occasion. Our expert stylists are dedicated to creating a stunning and personalized updo that complements your style and enhances your natural beauty.</dd>
          
-         <dt>Blow Dry - $45</dt>
+         <dt>Blow Dry - &#36;45</dt>
          <dd>Experience the luxury of a professional blowout. Our stylists will skillfully blow-dry and style your hair, leaving you with a polished and salon-fresh finish</dd>
          
-         <dt>Hair Braiding - $65 & Up</dt>
+         <dt>Hair Braiding - &#36;65 & Up</dt>
          <dd>Choose from our diverse range of braided styles to elevate your look and express your unique style. Our skilled braiders are here to bring your braiding fantasies to life!</dd>
          
-         <dt>Extensions - $125 & Up</dt>
+         <dt>Extensions - &#36;125 & Up</dt>
          <dd>Transform your look with extensions for added length and volume. Our stylists will seamlessly blend extensions for a natural and glamorous result.</dd>
         </dl>
          
@@ -92,34 +91,33 @@
       
       
               <footer>
-            <section >
-                <h3>Contact us</h3>
-                <dl>
-                    <dt>Address:</dt>
-                    <dd>1750 E. Palomar St.
-                        <br>
-                        Suite&nbsp;9
-                        <br>
-                        Chula Vista, CA 
-                        91913</dd>
-                    <dt>Phone:</dt>
-                    <dd>
-                        (619) 656-8903
-                    </dd>
-                  </dl>
-            </section>
-
-            <section id="hours">
-                <h3>Business Hours</h3>
-                <dl >
-                    <dt>Mon-Fri</dt>
-                    <dd> 10:00 AM - 8:00 PM</dd>
-                    <dt>Sat</dt>
-                    <dd> 9:00 AM - 6:00 PM</dd>
-                    <dt>Sun</dt>
-                    <dd> 11:00 AM - 5:00 PM</dd>
-                  </dl>
-            </section>
+                <section >
+                    <h3>Contact us</h3>
+                    <dl>
+                        <dt>Address:</dt>
+                        <dd>1750 E. Palomar&nbsp;St.
+                            Suite&nbsp;9
+                            <br>
+                            Chula&nbsp;Vista,&nbsp;CA 
+                            91913</dd>
+                        <dt>Phone:</dt>
+                        <dd>
+                            (619) 656-8903
+                        </dd>
+                      </dl>
+                </section>
+    
+                <section id="hours">
+                    <h3>Business Hours</h3>
+                    <dl >
+                        <dt>Mon-Fri</dt>
+                        <dd>10:00&nbsp;AM&nbsp;- 8:00&nbsp;PM</dd>
+                        <dt>Sat</dt>
+                        <dd>9:00&nbsp;AM&nbsp;- 6:00&nbsp;PM</dd>
+                        <dt>Sun</dt>
+                        <dd>11:00&nbsp;AM&nbsp;- 5:00&nbsp;PM</dd>
+                      </dl>
+                </section>
 
             <section id="social">
                 <a href="https://www.instagram.com/nailsbysongn/?hl=en" target="_blank">
