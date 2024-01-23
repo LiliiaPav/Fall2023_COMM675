@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(this).find('ul').stop().fadeToggle(10);
  });
 
- // Semd alert on the button click
+ // Send alert on the button click
  $( "#submitform-review" ).click(function() {     
   alert ("Thank you for your Review");
 });
