@@ -423,7 +423,7 @@ table {
         border-color: var(--primary-color);
     }
 
-    #review-page input[type="radio"], #review-page input[type="checkbox"] {
+    #review-page input[type="radio"], #review-page input[type="checkbox"] {  /*Attribute selector*/
         accent-color: var(--accent-dark-color);
     }
  
