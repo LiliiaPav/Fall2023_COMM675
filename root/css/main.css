@@ -410,7 +410,7 @@ table {
         padding: 5px;
         margin-left: 5px;
     }
-
+  
     #review-page textarea{
         width: 100%;
         max-width: 300px;
@@ -567,7 +567,7 @@ table {
         outline: solid 1px var(--primary-color);
     }
     #contactUs #contactForm label#yourMessage span{
-        left: -9999px;
+        margin-left: -9999px;
     }
     
     button#submitForm{
@@ -1019,6 +1019,7 @@ table {
     align-items: start;
     font: var(--fs-p)/var(--line-h) var(--primary-font);
 }
+/*----- Style Guide Typography -----*/
 #styleGuide h1{
     grid-column: 1 / span 2;
     line-height: var(--line-h);
@@ -1048,7 +1049,7 @@ table {
     margin-bottom: var(--spacer);
 }
 
-
+/*----- Style Guide Logo -----*/
 #styleGuide .logo{
     grid-column: 1 / span 2;
     width: 125px;
@@ -1056,7 +1057,7 @@ table {
     margin: var(--spacer-dbl) auto;
 }
 
-
+/*----- Style Guide Color -----*/
 section#color{
     grid-column: 1 / span 2;
     margin: var(--spacer) auto var(--spacer-thr);
@@ -1109,6 +1110,7 @@ section#color div:nth-of-type(6){
     background-color: var(--label-color);
 }
 
+/*----- Style Guide Typography -----*/
 article#typo{
     grid-column: 1 / span 2;
     display: flex;
@@ -1122,7 +1124,7 @@ article#typo h2{
 article#typo>section{
     border: dashed 1px var(--label-color);
     padding: var(--spacer);
-    width: 100%;
+  
 }
 article#typo>section:nth-of-type(1){
     width: 100%;
@@ -1133,6 +1135,10 @@ article#typo>section:nth-of-type(1){
 article#typo>p{
     width: 100%;
     text-align: center;
+}
+article#typo section dt.nav-b{
+    font-size: 2.2rem;
+    font-weight: 400;
 }
 article#typo section dt.regular{
     font-size: 1.6rem;
@@ -1169,7 +1175,7 @@ article#typo article{
     margin-top: var(--spacer);
 }
 
-
+/*----- Style Guide Buttons -----*/
 section#buttonStyle{
     grid-column: 1 / span 2;
     width: 100%;
@@ -1207,7 +1213,7 @@ button#submitForm{
     margin-bottom: var(--spacer);
 }
 
-
+/*----- Style Guide Form -----*/
 section#formStyle{
     grid-column: 1 / span 2;
     margin: 0 auto var(--spacer-thr);
@@ -1218,11 +1224,13 @@ section#formStyle{
 }
 legend{
     margin-bottom: var(--spacer-dbl);
+    color: var(--primary-color);
+    font: var(--fw-m) 2.4rem var(--headline-font);
 }
 label#inside, label#yourMessage{
     display: block;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: var(--fs-p);
     line-height: var(--line-h);
     font-family: var(--primary-font);
     color: var(--label-color);        
@@ -1233,7 +1241,7 @@ label#inside span{
     top: 11px;
     left: 9px;
 }
-label#inside input,select#serviceOp{
+label#inside input, select#serviceOp{
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -1249,7 +1257,7 @@ label#inside input,select#serviceOp{
 /*check box radio button*/
 input#radio, input#checkbox{
     position: absolute;
-    margin-left: -9999px;
+    left: -9999px;
     visibility: hidden;
 }
 label#customBox, label#customRadio{
@@ -1266,7 +1274,7 @@ input#radio+span, input#checkbox+span{      /* Adjacent sibling selector */
     top: 2px;
     width: 20px;
     height: 20px;
-    background: var(--neutral-lt-color);
+    background-color: var(--neutral-lt-color);
     border: solid 1px #636363;
 }
 input#checkbox+span{
@@ -1283,7 +1291,7 @@ input#checkbox+span::after, input#radio+span::after{
     left: 50%;
     width: 0;
     height: 0;
-    background: var(--primary-color);
+    background-color: var(--accent-dark-color);
     transform: translate(-50%,-50%);
 }
 input#checkbox:not(:checked)+span::after, input#radio:not(:checked)+span::after{
@@ -1303,16 +1311,19 @@ input#radio:checked+span::after{
     width: 10px;
     height: 10px;
 }
+label#customOption, select#serviceOp{
+    font: var(--fs-p) / var(--line-h) var(--primary-font);
+    color: var(--label-color);
+}
 label#yourMessage span{
     position: absolute;
-    top: 8px;
-    left: 9px;
+    left: -9999px;
 }
 label#yourMessage textarea{
     box-sizing: border-box;
     width: 100%;
     height: 12rem;
-    padding: calc(var(--spacer-dbl)*1.3) 2px 2px 9px;
+    padding: 2px 2px 2px 6px;
     margin-bottom: var(--spacer-dbl);
     font: var(--fs-p)/ var(--line-h) var(--primary-font);
     border: var(--form-border);
@@ -1322,9 +1333,17 @@ section#formStyle ul{
     margin-top: calc(var(--spacer)*2.5);
 }
 
-
+/*----- Style Guide Icons -----*/
 #styleGuide section#icons{
+    text-align: center;
+    margin-bottom: var(--spacer);
     grid-column: 1 / span 2;
+}
+#styleGuide section#icons h2{
+    margin-bottom: 0;
+}
+#styleGuide section#icons p{
+    margin-bottom: var(--spacer-dbl);
 }
 #styleGuide section#social ul, #styleGuide section#yelp ul{ 
     text-align: center;
@@ -1335,7 +1354,7 @@ section#formStyle ul{
     justify-content: center;
 }
 #styleGuide section#icons section#social{
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     margin: 0 auto var(--spacer);
     width: 300px;
 }
@@ -1347,11 +1366,9 @@ section#social i{
 }
 section#social p{
     color: var(--neutral-lt-color);
-    text-align: center;
 }
 section#yelp li{
     font-size: var(--fs-p);
-    text-align: center;
     margin-bottom: var(--spacer);
 }
 section#yelp span{

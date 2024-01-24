@@ -77,9 +77,9 @@
     <section id="reviewForm">
     <form>
       <fieldset>
-            <legend>How was your experience?</legend>
+          <legend>How was your experience?</legend>
           <label for="name"><span>Name</span></label>
-          <input type="text" id="name" name="name" placeholder=""><br><br>
+          <input type="text" id="name" name="name" placeholder="" autofocus><br><br>
           <label for="guestEmail"><span>Email</span></label>
           <input type="text" id="guestEmail" name="guestEmail" placeholder="" required><br><br>
                 
@@ -99,17 +99,18 @@
           <br><br>
                         
           <label>What service did you have:</label><br><br>
-          <label>Hair</label> 
-          <input type="checkbox">    
-          <label>Nails</label>
-          <input type="checkbox"> 
-          <label>Wax</label> 
-          <input type="checkbox"> 
+          <input type="checkbox" id="hair">
+          <label for="hair">Hair</label>     
+          <input type="checkbox" id="nail">
+          <label for="nail">Nails</label> 
+          <input type="checkbox" id="wax">
+          <label for="wax">Hair</label>  
+         
           <br><br><br>  
 
                     
-          <label>Would you recommend us to a friend?</label> <br><br>
-          <select name="recomend">     
+          <label for="recomend">Would you recommend us to a friend?</label> <br><br>
+          <select name="recomend" id="recomend">     
               <option >Recomend?</option>      
               <option>Yes</option>     
               <option>No</option>     
@@ -117,7 +118,7 @@
           </select><br><br><br>
 
                                    
-          <label>Message:</label><br><br>
+          <label for="message">Message:</label><br><br>
           <textarea name="message" id="message" placeholder=""></textarea><br><br>
        
           <input type="submit" id="submitform-review" value="Share Feedback">
